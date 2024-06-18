@@ -196,6 +196,10 @@ nav ul li a {
     padding-top: 15vh;
     display: inline-flex;
 }
+
+.Institucional-columna-flex {
+    padding-right: 20vh;
+}
 .Institucional-flex {
     display: flex;
     justify-content: space-between;
