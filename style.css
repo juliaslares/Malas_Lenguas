@@ -204,9 +204,6 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
 }
-video {
-     padding-top: 0%;
-}
 .Ministerio {
     padding-top: 5vh;
 }
