@@ -70,12 +70,18 @@ nav ul li a {
 .nav-hover:hover {
     color: #2A674D;
 }
+.imagen-inicio {
+    object-fit: cover;
+}
 #Proyecto {
     color: black;
     background-color: #E9EFEA;
     padding-inline: 10vh;
     padding-bottom: 15vh;
     padding-top: 15vh;
+}
+.imagen-proyecto {
+    object-fit: cover;
 }
 .proyecto-flex {
     display: flex;
@@ -103,6 +109,9 @@ nav ul li a {
 .contenedor-text-img-transparencia {
     display: flex;
     justify-content: left;
+}
+.imagen-transparencia {
+    object-fit: cover;
 }
 .columna-flex {
     padding-left: 20vh;
@@ -241,9 +250,49 @@ a {
     text-decoration: none;
     color: #000;
 }
-@media (max-width: 600px){
+@media only screen and (max-width: 1030px){
+    .imagen-proyecto{
+        width: 40%;
+    }
+    .imagen-transparencia {
+        width: 30%;
+    }
+    .columna-flex {
+        align-items: center;
+    }
+    .titulo-transparencia {
+        line-height: 0.8em;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
+    }
+}
+@media only screen and (max-width: 1000px){
     header{
         flex-direction: column;
         position: relative;
+        padding-bottom: 2vh;
+    }
+    .contenedor-text-img-transparencia {
+        display: block;
+    }
+    .imagen-transparencia {
+        width: 100%;
+    }
+    #Transparencia {
+        padding: 0vh;
+    }
+    .columna-flex {
+        align-items: center;
+    }
+    .titulo-transparencia {
+        line-height: 0.8em;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
+    }
+    #Institucional {
+        padding: 0vh;
+    }
+    .Institucional-flex {
+        display: block;
     }
 }
