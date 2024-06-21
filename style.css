@@ -68,7 +68,7 @@ nav ul li a {
     padding-right: 35px;
   }
 .nav-hover:hover {
-    color: #B05923;
+    color: #2A674D;
 }
 #Proyecto {
     color: black;
@@ -123,6 +123,10 @@ nav ul li a {
   padding: 2vh; 
   background-color: #E9EFEA;
   border-radius: 30px;
+  transition: background 0.2s;
+}
+#button:hover {
+    background-color: #2A674D;
 }
 #Catalogo{
     text-align: center;
@@ -147,37 +151,37 @@ nav ul li a {
 .color1 {
     background-color: #95B4D1;
     color: #95B4D1;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
 }
 .color2 {
     background-color: #CDDFC5;
     color: #CDDFC5;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
 }
 .color3 {
     background-color: #212E72;
     color: #212E72;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
     margin-left: 1.2vh;
 }
 .color4 {
     background-color: #212E72;
     color: #212E72;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
 }
 .color5 {
     background-color: #727160;
     color: #727160;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
     margin-left: 1.2vh;
     margin-right: 1.2vh;
@@ -185,8 +189,8 @@ nav ul li a {
 .color6 {
     background-color: #1A141A;
     color: #1A141A;
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
     border-radius: 90px;
     margin-right: 1.2vh;
 }
