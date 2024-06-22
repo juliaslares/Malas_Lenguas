@@ -111,15 +111,15 @@ nav ul li a {
 }
 .inicio-img{
     position: relative;
-    width: 400vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     display: flex;
     transition: 400ms ease-in-out;
 }
 .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
     position: relative;
     width: 100%;
-    height: 70vw;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -127,13 +127,13 @@ nav ul li a {
     left: 0;
 }
 .inicio-slider input:nth-child(2):checked ~ .inicio-img {
-    left: -105vw;
+    left: -100%;
 }
 .inicio-slider input:nth-child(3):checked ~ .inicio-img {
-    left: -210vw;
+    left: -200%;
 }
 .inicio-slider input:nth-child(4):checked ~ .inicio-img {
-    left: -315vw;
+    left: -300%;
 }
 #Proyecto {
     color: black;
@@ -287,6 +287,7 @@ footer {
     padding-inline: 10vh;
     padding-bottom: 5vh;
     padding-top: 8vh;
+    box-sizing: border-box;
 }
 .footer-contacto {
     display: flex;
@@ -327,6 +328,13 @@ a {
         line-height: 0.8em;
         padding-bottom: 0.8em;
         padding-top: 0.8em;
+    }
+    .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
+        position: relative;
+        width: 100%;
+        height: 80vw;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 1000px){
