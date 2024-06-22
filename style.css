@@ -250,7 +250,7 @@ a {
     text-decoration: none;
     color: #000;
 }
-@media only screen and (max-width: 1030px){
+@media only screen and (max-width: 1280px){
     .imagen-proyecto{
         width: 40%;
     }
