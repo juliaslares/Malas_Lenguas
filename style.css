@@ -209,12 +209,12 @@ nav ul li a {
 .catalogo-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin-top: 9vh;
     text-align: left;
 }
 .catalogo-imagen-texto {
-    padding: 2vh;
+    padding-right: 4vh;
 }
 .boxes-flex{
     display: flex;
