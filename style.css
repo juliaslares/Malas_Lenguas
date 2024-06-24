@@ -174,7 +174,6 @@ nav ul li a {
 }
 .imagen-transparencia {
     object-fit: cover;
-    border-radius: 10%;
 }
 .columna-flex {
     padding-left: 20vh;
