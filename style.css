@@ -2,6 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+html {
+    scroll-behavior: smooth;
+}
 h2 {
     color: #000;
     font-family: 'Kaisei Decol';
@@ -45,8 +48,8 @@ header {
     background-color: #A6BFB2;
     align-items: center;
     padding-inline:3.75em;
-    padding-left: 20vh;
-    padding-right: 20vh;
+    padding-left: 8vh;
+    padding-right: 10vh;
     min-height: 80px;
     width: 100%;
     position: fixed;
@@ -205,6 +208,7 @@ nav ul li a {
     padding-top: 15vh;
 }
 .catalogo-flex {
+    display: flex;
     justify-content: left;
     text-align: left;
     position: relative;
@@ -260,6 +264,7 @@ nav ul li a {
 .boxes-flex{
     display: flex;
     padding-top: 2vh;
+    height: 10vh;
 }
 .color1,.color2,.color3,.color4,.color5,.color6 {
     width: 3vh;
@@ -347,6 +352,9 @@ a {
         position: relative;
         padding-bottom: 2vh;
     }
+    h2 {
+        font-size: 3.75em;
+    }
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
         width: 100%;
@@ -366,6 +374,15 @@ a {
     }
     .imagen-proyecto{
         display: none;
+    }
+    #Catalogo{
+        text-align: left;
+        background-color: #F5F5F5;
+        padding-inline: 10vh;
+        padding: 2vh;
+    }
+    .proyecto-columna {
+        
     }
     .imagen-transparencia {
         width: 40%;
@@ -402,6 +419,9 @@ a {
         flex-direction: column;
         position: relative;
         padding-bottom: 2vh;
+    }
+    h2 {
+        font-size: 3em;
     }
     .inicio-img {
         width: 100%;
