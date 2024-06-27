@@ -205,7 +205,6 @@ nav ul li a {
     padding-top: 15vh;
 }
 .catalogo-flex {
-    display: flex;
     justify-content: left;
     text-align: left;
     position: relative;
