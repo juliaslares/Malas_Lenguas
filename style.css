@@ -1,43 +1,42 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
 }
 h2 {
-    color: #000;
-    font-family: 'Kaisei Decol';
-    font-weight: 500;
-    font-size: 3.75em;
+    color: #EE9046;
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
     box-sizing: content-box
 }
 h3 {
-    color: #000;
-    font-family: 'Roboto';
-    font-size: 1.2em;
+    color: #715B6D;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1rem;
     font-weight: 500;
     display: inline;
 }
 h4 {
-    color: black;
-    font-family: 'Kaisei Decol';
+    color: #715B6D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 h5 {
-    color: black;
-    font-family: 'Roboto';
-    font-size: 0,5em;
-    font-style: italic;
-    font-weight: 300;
-    display: inline;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 p {
     color: #000;
-    font-family: 'Roboto';
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: light;
+    font-weight: 500;
     font-size: 0.875em;
     line-height: 1.5;
     display: inline;
@@ -45,13 +44,13 @@ p {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #A6BFB2;
+    background-color: #C7A6AD;
     align-items: center;
-    padding-inline:3.75em;
-    padding-left: 8vh;
-    padding-right: 10vh;
+    padding-inline:3.75rem;
+    padding-left: 8vw;
+    padding-right: 10vw;
     min-height: 80px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     box-sizing: border-box;
     z-index: 100;
@@ -69,7 +68,7 @@ nav ul li a {
     font-style: normal;
     font-weight: light;
     color: #000;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     padding-right: 35px;
   }
 .nav-hover:hover {
@@ -89,12 +88,12 @@ nav ul li a {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2vh;
+    gap: 2vw;
     bottom: 4vh;
 }
 .buttons-inicio label{
-    width: 2vh ;
-    height:2vh;
+    width: 2em ;
+    height:2em;
     background-color: #2A674D;
     border-radius: 100%;
     opacity: 0.5;
@@ -140,8 +139,9 @@ nav ul li a {
 }
 #Proyecto {
     color: black;
-    background-color: #E9EFEA;
-    padding-inline: 10vh;
+    background-image: url(./media/Campaña/textura-cartulina\ 3.png);
+    background-size: cover;
+    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
 }
@@ -159,11 +159,13 @@ nav ul li a {
     flex-wrap: wrap;
     margin-top: 5vh;
     text-align: center;
-    gap: 5vh;
+    gap: 5vw;
 }
 #Transparencia {
     color: black;
-    padding-inline: 10vh;
+    background-image: url(./media/Campaña/textura-cartulina\ 2.png);
+    background-size: cover;
+    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
 
@@ -176,15 +178,15 @@ nav ul li a {
     object-fit: cover;
 }
 .columna-flex {
-    padding-left: 20vh;
+    padding-left: 2vw;
 }
 .titulo-transparencia {
-    line-height: 0.8em;
-    padding-bottom: 0.8em;
+    line-height: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 .lista-transparencia {
-    font-family:'Roboto' ;
-    font-size: 0.875em;
+    font-family: "Montserrat", sans-serif ;
+    font-size: 0.875rem;
 }
 #button {
   text-align: center;
@@ -197,12 +199,13 @@ nav ul li a {
   transition: background 0.2s;
 }
 #button:hover {
-    background-color: #2A674D;
+    background-color: #4F364B;
+    color: #F6E8CB;
 }
 #Catalogo{
     text-align: left;
     background-color: #F5F5F5;
-    padding-inline: 10vh;
+    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
 }
@@ -216,7 +219,8 @@ nav ul li a {
     margin: auto;
     overflow: scroll;
     align-self: center;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
 }
 .catalogo-slider {
     display: flex; 
@@ -258,12 +262,12 @@ nav ul li a {
     }
 } */
 .catalogo-imagen-texto {
-    padding-right: 4vh;
+    padding-right: 4vw;
 }
 .boxes-flex{
     display: flex;
     padding-top: 2vh;
-    height: 10vh;
+    width: 10vw;
 }
 .color1,.color2,.color3,.color4,.color5,.color6 {
     width: 3vh;
@@ -281,7 +285,7 @@ nav ul li a {
 .color3 {
     background-color: #212E72;
     color: #212E72;
-    margin-left: 1.2vh;
+    margin-left: 1.2vw;
 }
 .color4 {
     background-color: #212E72;
@@ -290,16 +294,17 @@ nav ul li a {
 .color5 {
     background-color: #727160;
     color: #727160;
-    margin-left: 1.2vh;
-    margin-right: 1.2vh;
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
 }
+
 .color6 {
     background-color: #1A141A;
     color: #1A141A;
-    margin-right: 1.2vh;
+    margin-right: 1.2vw;
 }
 #Institucional {
-    padding-inline: 10vh;
+    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
 }
@@ -314,11 +319,17 @@ nav ul li a {
     padding-top: 5vh;
 }
 footer {
-    background-color: #A6BFB2;
-    padding-inline: 10vh;
+    background-color: #F5F5F5;
     padding-bottom: 5vh;
     padding-top: 8vh;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline:3.75rem;
+    padding-left: 8vw;
+    padding-right: 10vw;
+    min-height: 80px;
 }
 .footer-contacto {
     display: flex;
@@ -327,19 +338,16 @@ footer {
     align-items: center;
 }
 .Acerca-de {
-    padding-left: 20vh;
-}
-.ayuda {
-    padding-left: 40vh;
+    padding-left: 2vw;
 }
 .lista-contacto{
-    font-family: 'Roboto';
+    font-family: "Montserrat", sans-serif;
     color: #000;
     font-style: normal;
     list-style: none;
     font-weight: light;
     font-size: 0.875em;
-    line-height: 1.5; 
+    line-height: 1.5rem; 
 }
 a {
     text-decoration: none;
@@ -352,7 +360,7 @@ a {
         padding-bottom: 2vh;
     }
     h2 {
-        font-size: 3.75em;
+        font-size: 3.75rem;
     }
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
@@ -377,19 +385,19 @@ a {
     #Catalogo{
         text-align: left;
         background-color: #F5F5F5;
-        padding-inline: 10vh;
-        padding: 2vh;
+        padding-inline: 10vw;
+        padding: 2vw;
     }
     .imagen-transparencia {
-        width: 40%;
+        width: 40vw;
     }
     .columna-flex {
         align-items: center;
     }
     .titulo-transparencia {
-        line-height: 0.8em;
-        padding-bottom: 0.8em;
-        padding-top: 0.8em;
+        line-height: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
     }
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
@@ -404,7 +412,7 @@ a {
         text-align: left;
     }
     .Acerca-de {
-        padding-left: 0vh;
+        padding-left: 0vw;
     }
     .ayuda {
         display: none;
@@ -417,7 +425,7 @@ a {
         padding-bottom: 2vh;
     }
     h2 {
-        font-size: 3em;
+        font-size: 3rem;
     }
     .inicio-img {
         width: 100%;
@@ -429,7 +437,7 @@ a {
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
         width: 100%;
-        aspect-ratio: 1/2;
+        aspect-ratio: 9/16;
         justify-content: center;
         align-items: center;
         object-fit: cover;
@@ -444,7 +452,7 @@ a {
         display: block;
     }
     .imagen-transparencia {
-        width: 100%;
+        width: 100vw;
     }
     #Transparencia {
         padding: 5vh;
@@ -454,26 +462,26 @@ a {
         padding-left: 0vh;
     }
     .titulo-transparencia {
-        line-height: 0.8em;
-        padding-bottom: 0.8em;
-        padding-top: 0.8em;
+        line-height: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
     }
     #Institucional {
         padding: 10vh;
     }
     .Institucional-columna-flex {
-        padding-right: 0vh;
+        padding-right: 0vw;
     }
     .Institucional-flex {
         flex-direction: column;
     }
     iframe {
-        aspect-ratio: 16/10;
+        aspect-ratio: 16/9;
         padding-top: 2vh;
     }
     .Ministerio {
         padding-top: 5vh;
-        width: 80%;
+        width: 80vw;
         align-items: center;
     }
     .Institucional-flex {
@@ -485,7 +493,7 @@ a {
         text-align: left;
     }
     .Acerca-de {
-        padding-left: 0vh;
+        padding-left: 0vw;
     }
     .ayuda {
         display: none;
