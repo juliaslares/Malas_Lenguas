@@ -30,10 +30,10 @@ h5 {
     color: gray;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 p {
-    color: #000;
+    color: #4F364B;
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     font-weight: 500;
@@ -72,7 +72,7 @@ nav ul li a {
     padding-right: 35px;
   }
 .nav-hover:hover {
-    color: #2A674D;
+    color: #4F364B;
 }
 .contenedor-inicio {
     position: relative;
@@ -138,7 +138,7 @@ nav ul li a {
     left: -300%;
 }
 #Proyecto {
-    color: black;
+    color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 3.png);
     background-size: cover;
     padding-bottom: 8rem;
@@ -172,7 +172,7 @@ nav ul li a {
     gap: 8rem;
 }
 #Transparencia {
-    color: black;
+    color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 2.png);
     background-size: cover;
     padding-inline: 10vw;
@@ -185,7 +185,7 @@ nav ul li a {
     display: flex;
     align-items: flex-end;
 }
-.imagen-transparencia {
+.imagen-transparencia1 {
     object-fit: cover;
     padding-left: 2vw ;
 }
@@ -321,7 +321,7 @@ nav ul li a {
     margin-right: 1.2vw;
 }
 #Reinserción {
-    color: black;
+    color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 3.png);
     background-size: cover;
     padding-bottom: 8rem;
@@ -336,7 +336,7 @@ nav ul li a {
 .reinsercion-img {
     padding-left: 0.3rem;
     padding-left: 4rem;
-    height: 28rem;
+    height: 25rem;
 }
 
 .reinsercion-texto {
@@ -349,12 +349,20 @@ nav ul li a {
     padding-left: 6rem;
     padding-right: 6rem;
 }
+.punteo-intitucional {
+    color: #4F364B;
+    font-family: "Montserrat", sans-serif;
+    font-style: 400;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    display: inline;
+}
 .Institucional-columna-flex {
-    padding-right: 10vh;
+    padding-right: 8rem;
 }
 .Institucional-flex {
     display: flex;
-    justify-content: space-between;
 }
 .Ministerio {
     padding-top: 5vh;
