@@ -574,9 +574,6 @@ a {
         padding-top: 2rem;
         text-align: right;
     }
-
-
-
     .inicio-img {
         width: 100%;
         object-fit: cover;
@@ -587,7 +584,6 @@ a {
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
         width: 100%;
-        aspect-ratio: 9/16;
         justify-content: center;
         align-items: center;
         object-fit: cover;
@@ -612,7 +608,6 @@ a {
         align-content: center;
         justify-content: space-between;
         object-fit: contain;
-        width: 10%;
     }
     .icon {
         width: 2rem;
