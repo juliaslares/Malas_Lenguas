@@ -91,15 +91,17 @@ nav ul li a:not(#brand) {
 }
 .contenedor-inicio {
     position: relative;
-    height: 100vh;
+    height: 100rem;
     overflow: hidden;
 }
 .inicio-slider input{
     visibility: hidden;
     display: none;
 }
-.inicio-responsive-img {
+.contenedor-responsive-inicio{
     display: none;
+    visibility: hidden;
+    overflow: hidden;
 }
 .buttons-inicio{
     position: absolute;
@@ -230,6 +232,7 @@ nav ul li a:not(#brand) {
 }
 .contenedor-text-img-transparencia {
     display: flex;
+    justify-content: center;
 
 }
 .imagen-transparencia1 {
@@ -385,7 +388,7 @@ line-height: 2.5rem;
 }
 .reinsercion-flex {
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 .reinsercion-img {
     padding-left: 0.3rem;
@@ -421,6 +424,7 @@ line-height: 2.5rem;
 }
 .Institucional-flex {
     display: flex;
+    justify-content: center;
 }
 footer {
     background-color: #F5F5F5;
@@ -536,6 +540,18 @@ a {
     }
 }
 @media only screen and (max-width: 1000px){
+    h2 {
+        font-size: 2.3rem;
+        line-height: 4.5rem;
+        justify-items: center;
+        box-sizing: content-box;
+    }
+    p {
+        font-size: 0.7rem;
+        line-height: 0.01rem;
+        display: inline;
+        box-sizing: content-box;
+    }
     .nav-ul {
         display: none;
     }
@@ -574,14 +590,20 @@ a {
         padding-top: 2rem;
         text-align: right;
     }
-    .inicio-img {
+
+.inicio-img {
+    display: none;
+}
+
+    .inicio-responsive-img{
+        display: flex;
         width: 100%;
         object-fit: cover;
         aspect-ratio: 9/16;
         justify-content: center;
         align-items: center;
     }
-    .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
+    .imagen-responsive-inicio1,.imagen-responsive-inicio2,.imagen-responsive-inicio3,.imagen-responsive-inicio4{
         position: relative;
         width: 100%;
         justify-content: center;
@@ -590,52 +612,89 @@ a {
     }
 
     #Proyecto {
-        padding: 5vh;
+        padding: 2rem;
     }
     .proyecto-flex {
         flex-direction: column;
     }
+    .proyecto-textil-texto {
+        justify-content: end;
+    }
     .imagenes-proyecto {
         justify-content: flex-start;
     }
+    .imagen-proyecto1 {
+        display: flex;
+        height: 12rem;
+        width: 12rem;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
     .imagen-proyecto2 {
-        height: 2rem;
+        height: 12rem;
+        width: 12rem;
+        padding-left: 0rem;
+        padding-top: 3rem;
     }
 
     .icon-flex {
         display: flex;
-        padding: none;
+        padding: 2rem;
         align-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
         object-fit: contain;
+        gap: 1rem;
+        background-color: #F5F5F5;
     }
     .icon {
-        width: 2rem;
+        width: 10rem;
+    }
+    .icon-solo {
+        width: 100%;
+        height: 100%;
     }
     
 
     #Transparencia {
-        padding: 5vh;
+        padding: 2rem;
     }
     .columna-flex {
         align-items: center;
+        padding-left: 0rem;
+        padding-bottom: 2rem;
     }
     .contenedor-text-img-transparencia {
         display: block;
     }
     .imagen-transparencia1 {
-        width: 2rem;
+        width: 20rem;
+        padding-bottom: 2rem;
+        padding-left: 0rem;
     }
 
+    #Catalogo {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+    .catalogo-flex {
+        padding-top: 1rem;
+    }
+    .catalogo-imagen-texto {
+        width: 50%;
+    }
+
+    #Reinserción {
+        padding: 2rem;
+    }
     .reinsercion-flex {
         flex-direction: column;
     }
-    .reinsercion-texto {
-        align-content: center;
-    }
     .reinsercion-img {
-        width: 40rem;
-        padding-top: 10rem;
+        width: auto;
+        height: auto ;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
 
@@ -652,7 +711,7 @@ a {
         aspect-ratio: 16/9;
         align-content: center;
         padding-top: 2vh;
-        width: 40rem;
+        width: 100%;
     }
 
     .footer-contacto {
