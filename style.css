@@ -93,7 +93,6 @@ nav ul li a {
     border-radius: 100%;
     opacity: 0.5;
     cursor: pointer;
-    z-index: 10;
     transition: 300ms ease-in-out;
 }
 .buttons-inicio label:hover {
@@ -430,8 +429,6 @@ a {
     #Catalogo{
         text-align: left;
         background-color: #F5F5F5;
-        padding-inline: 10vw;
-        padding: 2vw;
     }
     .imagen-transparencia {
         width: 40vw;
@@ -504,7 +501,6 @@ a {
     }
     .columna-flex {
         align-items: center;
-        padding-left: 0vh;
     }
     .titulo-transparencia {
         line-height: 0.8rem;
