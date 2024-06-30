@@ -14,7 +14,7 @@ h2 {
     line-height: 4.5rem;
 }
 h3 {
-    color: #715B6D;
+    color: #F6E8CB;
     font-family:  "Montserrat", sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
@@ -25,6 +25,7 @@ h4 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    padding-top: 1rem;
 }
 h5 {
     color: gray;
@@ -41,21 +42,34 @@ p {
     line-height: 1rem;
     display: inline;
 }
-header {
+nav {
+    justify-content: end;
     background-color: #C7A6AD;
     padding-inline:3.75rem;
     padding-left:5.6rem;
     padding-right: 5.6rem;
     width: 100vw;
     box-sizing: border-box;
-    z-index: 100;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
 }
+.nav-responsive-ul {
+    display: none;
+   }
+
 nav ul {
     display: flex;
-    justify-content: space-between;
+    width: 100%; 
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li:first-child {
+    margin-right: auto;
 }
 nav ul li {
     list-style: none;
+    height: 4rem;
 }
 nav ul li a {
     text-decoration: none;
@@ -64,8 +78,14 @@ nav ul li a {
     font-weight: light;
     color: #000;
     font-size: 0.8rem;
-    padding-right: 35px;
-  }
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:not(#brand) {
+    padding-left: 2rem;
+}
+
 .nav-hover:hover {
     color: #4F364B;
 }
@@ -85,6 +105,7 @@ nav ul li a {
     justify-content: center;
     gap: 2vw;
     bottom: 4vh;
+    z-index: 50;
 }
 .buttons-inicio label{
     width: 1.8rem ;
@@ -161,7 +182,8 @@ nav ul li a {
 }
 .icon-flex {
     display: flex;
-    padding: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     justify-content: center;
     gap: 8rem;
 }
@@ -178,7 +200,7 @@ nav ul li a {
 }
 .contenedor-text-img-transparencia {
     display: flex;
-    align-items: flex-end;
+
 }
 .imagen-transparencia1 {
     object-fit: cover;
@@ -186,23 +208,21 @@ nav ul li a {
 }
 .columna-flex {
     padding-left: 2vw;
+    padding-bottom: 3rem;
 }
 .titulo-transparencia {
-    line-height: 2.5rem;
+line-height: 2.5rem;
     padding-bottom: 0.8rem;
     color: #fff;
 }
-.lista-transparencia {
-    font-family: "Montserrat", sans-serif ;
-    font-size: 0.875rem;
-}
+
 #button {
   text-align: center;
   text-decoration: none;
   font-size: 1em;
-  margin-top: 3vh;
+  margin-top: 3rem;
   padding: 2vh; 
-  background-color: #E9EFEA;
+  background-color: #C7A6AD;
   border-radius: 30px;
   transition: background 0.2s;
   align-content: flex-start;
@@ -360,8 +380,11 @@ nav ul li a {
     font-style: 400;
     font-weight: 500;
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
     display: inline;
+}
+.punteo-intitucional ul {
+    padding-left: 2rem;
 }
 .Institucional-columna-flex {
     padding-right: 8rem;
@@ -371,21 +394,26 @@ nav ul li a {
 }
 footer {
     background-color: #F5F5F5;
-    padding-bottom: 5vh;
-    padding-top: 8vh;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
     box-sizing: border-box;
     align-items: center;
     padding-inline:3.75rem;
     padding-left: 8vw;
     padding-right: 10vw;
     min-height: 80px;
-    align-content: flex-start;
+}
+.footer-brand {
+    width: 12rem;
 }
 .footer-contacto {
     display: flex;
     margin-top: 5vh;
     text-align: left;
     align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10rem;
 }
 .Acerca-de {
     padding-left: 2vw;
@@ -404,14 +432,7 @@ a {
     color: #000;
 }
 @media only screen and (max-width: 1280px){
-    header{
-        flex-direction: column;
-        position: relative;
-        padding-bottom: 2vh;
-    }
-    h2 {
-        font-size: 3.75rem;
-    }
+
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
         width: 100%;
@@ -425,7 +446,30 @@ a {
     } */
      .imagen-proyecto1 {
         display: none;
-     }
+    }
+
+     .icon-flex {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+     
+    
+
+    .contenedor-text-img-transparencia {
+        display: flex;
+        justify-content: space-between;
+    }
+    .columna-flex {
+        align-content: text;
+        padding-left: 0vh;
+    }
+    .imagen-transparencia2 {
+        display: none;
+    }
     #Catalogo{
         text-align: left;
         background-color: #F5F5F5;
@@ -436,11 +480,7 @@ a {
     .columna-flex {
         align-items: center;
     }
-    .titulo-transparencia {
-        line-height: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-top: 0.8rem;
-    }
+    
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
         width: 100%;
@@ -448,31 +488,73 @@ a {
         justify-content: center;
         align-items: center;
     }
+
+    .reinsercion-flex {
+        display: flex;
+        justify-content: start;
+    }
+    .reinsercion-img {
+        width: 38rem;
+    }
+
     .footer-contacto {
-        flex-direction: column;
-        margin-top: 5vh;
+        display: flex;
+        margin-top: 5rem;
         text-align: left;
     }
     .Acerca-de {
-        padding-left: 0vw;
+        display: none;
     }
     .ayuda {
         display: none;
     }
 }
 @media only screen and (max-width: 1000px){
-    header{
+    .nav-ul {
+        display: none;
+    }
+    nav {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+    .nav-responsive-ul {
+        display: flex;
         flex-direction: column;
-        position: relative;
-        padding-bottom: 2vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        background-color: #C7A6AD;
+        z-index: 5;
     }
-    h2 {
-        font-size: 3rem;
+    .nav-li-contenedor {
+        width: 100%;
     }
+    .nav-li-contenedor a {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .nav.responsive.button.contenedor {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content:last baseline;
+    }
+    
+    .nav-responsive-button {
+        font-size: 2rem;
+        padding-left: 20rem;
+        padding-top: 2rem;
+        text-align: right;
+    }
+
+
+
     .inicio-img {
         width: 100%;
         object-fit: cover;
-        aspect-ratio: 10/16;
+        aspect-ratio: 9/16;
         justify-content: center;
         align-items: center;
     }
@@ -484,29 +566,58 @@ a {
         align-items: center;
         object-fit: cover;
     }
+
     #Proyecto {
         padding: 5vh;
     }
     .proyecto-flex {
         flex-direction: column;
     }
-    .contenedor-text-img-transparencia {
-        display: block;
+    .imagenes-proyecto {
+        justify-content: flex-start;
     }
-    .imagen-transparencia {
-        width: 100vw;
+    .imagen-proyecto2 {
+        height: 2rem;
     }
+
+    .icon-flex {
+        display: flex;
+        padding: none;
+        align-content: center;
+        justify-content: space-between;
+        object-fit: contain;
+        width: 10%;
+    }
+    .icon {
+        width: 2rem;
+    }
+    
+
     #Transparencia {
         padding: 5vh;
     }
     .columna-flex {
         align-items: center;
     }
-    .titulo-transparencia {
-        line-height: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-top: 0.8rem;
+    .contenedor-text-img-transparencia {
+        display: block;
     }
+    .imagen-transparencia1 {
+        width: 2rem;
+    }
+
+    .reinsercion-flex {
+        flex-direction: column;
+    }
+    .reinsercion-texto {
+        align-content: center;
+    }
+    .reinsercion-img {
+        width: 40rem;
+        padding-top: 10rem;
+    }
+
+
     #Institucional {
         padding: 10vh;
     }
@@ -518,11 +629,19 @@ a {
     }
     iframe {
         aspect-ratio: 16/9;
+        align-content: center;
         padding-top: 2vh;
+        width: 40rem;
+    }
+
+    .footer-contacto {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
     }
     .Ministerio {
         padding-top: 5vh;
-        width: 80vw;
+        width: 20rem;
         align-items: center;
     }
     .Institucional-flex {
@@ -534,7 +653,7 @@ a {
         text-align: left;
     }
     .Acerca-de {
-        padding-left: 0vw;
+        display: none;
     }
     .ayuda {
         display: none;
