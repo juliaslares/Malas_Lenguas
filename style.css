@@ -91,18 +91,18 @@ nav ul li a:not(#brand) {
 }
 .contenedor-inicio {
     position: relative;
-    height: 100rem;
+    height: 100vh;
     overflow: hidden;
 }
 .inicio-slider input{
     visibility: hidden;
     display: none;
 }
-.contenedor-responsive-inicio{
+/* .contenedor-responsive-inicio{
     display: none;
     visibility: hidden;
     overflow: hidden;
-}
+} */
 .buttons-inicio{
     position: absolute;
         z-index: 50;
