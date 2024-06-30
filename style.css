@@ -98,8 +98,12 @@ nav ul li a:not(#brand) {
     visibility: hidden;
     display: none;
 }
+.inicio-responsive-img {
+    display: none;
+}
 .buttons-inicio{
     position: absolute;
+        z-index: 50;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -132,7 +136,21 @@ nav ul li a:not(#brand) {
     display: flex;
     transition: 400ms ease-in-out;
 }
+.inicio-responsive-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
 .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-responsive-inicio1,.imagen-responsive-inicio2,.imagen-responsive-inicio3,.imagen-responsive-inicio4{
     position: relative;
     width: 100%;
     height: 100%;
@@ -151,6 +169,19 @@ nav ul li a:not(#brand) {
 .inicio-slider input:nth-child(4):checked ~ .inicio-img {
     left: -300%;
 }
+.inicio-slider input:nth-child(1):checked ~ .inicio-responsive-img {
+    left: 0;
+}
+.inicio-slider input:nth-child(2):checked ~ .inicio-responsive-img {
+    left: -100%;
+}
+.inicio-slider input:nth-child(3):checked ~ .inicio-responsive-img {
+    left: -200%;
+}
+.inicio-slider input:nth-child(4):checked ~ .inicio-responsive-img {
+    left: -300%;
+}
+
 #Proyecto {
     color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 3.png);
@@ -431,6 +462,9 @@ a {
     color: #000;
 }
 @media only screen and (max-width: 1280px){
+    h2 {
+    line-height: 3.2rem;
+    }
 
     .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
         position: relative;
@@ -460,7 +494,7 @@ a {
     }
     .columna-flex {
         align-content: text;
-        padding-left: 0vh;
+        padding-left: 1.5rem;
     }
     .imagen-transparencia2 {
         display: none;
