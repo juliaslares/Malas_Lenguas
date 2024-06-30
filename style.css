@@ -218,7 +218,6 @@ nav ul li a {
 #Catalogo{
     text-align: left;
     background-color: #F5F5F5;
-    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
     padding-left: 6rem;
@@ -232,11 +231,7 @@ nav ul li a {
     padding-top: 5vh;
     height: auto;
     margin: auto;
-    overflow: scroll;
     align-self: center;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    width: 100vw;
     scrollbar-width: none;
 }
 .catalogo-slider {
