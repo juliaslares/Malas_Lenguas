@@ -42,16 +42,11 @@ p {
     display: inline;
 }
 header {
-    display: flex;
-    justify-content: space-between;
     background-color: #C7A6AD;
-    align-items: center;
     padding-inline:3.75rem;
     padding-left:5.6rem;
     padding-right: 5.6rem;
-    min-height: 80px;
     width: 100vw;
-    position: fixed;
     box-sizing: border-box;
     z-index: 100;
 }
@@ -167,7 +162,6 @@ nav ul li a {
 }
 .icon-flex {
     display: flex;
-    flex-wrap: wrap;
     padding: 8rem;
     justify-content: center;
     gap: 8rem;
@@ -376,16 +370,11 @@ nav ul li a {
 .Institucional-flex {
     display: flex;
 }
-.Ministerio {
-    padding-top: 5vh;
-}
 footer {
     background-color: #F5F5F5;
     padding-bottom: 5vh;
     padding-top: 8vh;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-inline:3.75rem;
     padding-left: 8vw;
@@ -431,15 +420,6 @@ a {
         justify-content: center;
         align-items: center;
         object-fit: cover;
-    }
-    .proyecto-flex {
-        flex-direction: column;
-    }
-    .icon-flex {
-     gap: 2vh;
-    }
-    .icon {
-        padding: 0%;
     }
     /* .imagen-proyecto{
         display: none;
