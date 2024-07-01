@@ -11,37 +11,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <script src="main.js"></script>
 <header>    
-    <nav>
+    <nav class="-nav">
         <ul class="nav-ul"> 
            <li><a id="brand" href="index.html"><img src="./media/brand/malas lenguas crema-02 1.png" alt="Signo2"></a></li>
-           <li><a class="nav-hover" href="#Proyecto">Proyecto textil</a></li>
-           <li><a class="nav-hover" href="#Transparencia">Transparencia</a></li>
-           <li><a class="nav-hover" href="#Catalogo">Catálogo</a></li>
-           <li><a class="nav-hover" href="#Reinserción">Reinserción</a></li>
-           <li><a class="nav-hover" href="#Institucional">Institucional</a></li>
-           <li><a class="nav-hover" href="#Contacto">Contacto</a></li>
+           <li><a class="nav-li" href="#Proyecto">Proyecto textil</a></li>
+           <li><a class="nav-li" href="#Transparencia">Transparencia</a></li>
+           <li><a class="nav-li" href="#Catalogo">Catálogo</a></li>
+           <li><a class="nav-li" href="#Reinserción">Reinserción</a></li>
+           <li><a class="nav-li" href="#Institucional">Institucional</a></li>
+           <li><a class="nav-li" href="#Contacto">Contacto</a></li>
         </ul>
-        <!-- <ul class="nav-responsive-ul"> 
-        <div class="nav.responsive.button.contenedor">  
-            <a id="brand" href="index.html"><img src="./media/brand/malas lenguas crema-02 1.png" alt="Signo2"></a> 
-            <div class="nav-responsive-button fas fa-bars"></div>
-        </div>
-        <div class="nav-li-contenedor">
-            <li><a classs="nav-responsive-li"  href="#Proyecto">Proyecto textil</a></li>
+
+        <ul class="nav-responsive-ul"> 
+            <a id="brand" href="index.html"><img src="./media/brand/malas lenguas crema-02 1.png" alt="Signo2"></a>
+            <button class="abrir-menu" id="abrir"><i class="fas fa-bars"></i></button>
+        
+        <div class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="fas fa-x"></i></button>
+        <div class="nav-responsive-li-cont">
+            <li><a class="nav-responsive-li"  href="#Proyecto">Proyecto textil</a></li>
             <li><a class="nav-responsive-li" href="#Transparencia">Transparencia</a></li>
             <li><a class="nav-responsive-li" href="#Catalogo">Catálogo</a></li>
             <li><a class="nav-responsive-li" href="#Reinserción">Reinserción</a></li>
             <li><a class="nav-responsive-li" href="#Institucional">Institucional</a></li>
             <li><a class="nav-responsive-li" href="#Contacto">Contacto</a></li>
         </div>
-         </ul> -->
+            </div>
+         </ul>
     </nav>
 </header>  
-
 <main>
 <div class="contenedor-inicio">
     <div class="inicio-slider">
@@ -344,7 +348,7 @@
     </a>
     </div>
     <!-- <img src="./media/Campaña/DSC_5860.jpg" width="50%" alt="video"> muy pesado-->
-    <iframe src="https://drive.google.com/file/d/1SKYhnnQI6SfcLj6FmTopZyKYg0z5FVEc/preview" controls width="640" height="480"></iframe>
+    <iframe src="https://drive.google.com/file/d/1SKYhnnQI6SfcLj6FmTopZyKYg0z5FVEc/preview" controls></iframe>
 </div>
 <a class="button-movile" href="https://www.argentina.gob.ar/justicia">
     <div id="button"><h3>Ministerio de Justicia y DDHH</h3></div>

@@ -55,7 +55,7 @@ nav {
 }
 .nav-responsive-ul {
     display: none;
-   }
+}
 
 nav ul {
     display: flex;
@@ -425,6 +425,11 @@ line-height: 2.5rem;
     display: flex;
     justify-content: center;
 }
+iframe {
+
+    width: 50%;
+
+}
 .button-movile {
     display: none;
 }
@@ -467,7 +472,7 @@ a {
     text-decoration: none;
     color: #000;
 }
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1200px){
     h2 {
     line-height: 3.2rem;
     }
@@ -542,6 +547,87 @@ a {
         display: none;
     }
 }
+@media only screen and (max-width: 1100px){
+    .nav-ul {
+        display: none;
+    }
+    header {
+        justify-content: space-between;
+    }
+    nav {
+        height: 4rem;
+        width: 100%;
+    }
+    .-nav {
+        align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .nav-responsive-ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        background-color: #C7A6AD;
+        padding: 2rem;
+        width: 50%;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgb(79, 54, 75, .50);
+    }
+    .nav-responsive-li-cont {
+        flex-direction: column;
+    }
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #4F364B;
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #Transparencia {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+    .imagen-transparencia1 {
+        width: 20rem;
+        padding-bottom: 2rem;
+        padding-left: 0rem;
+    }
+
+
+    #Reinserción {
+        padding: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .reinsercion-flex {
+        flex-direction: column;
+    }
+    .reinsercion-img {
+        width: auto;
+        height: auto ;
+        padding-top: 2rem;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
 @media only screen and (max-width: 800px){
     h2 {
         font-size: 2rem;
@@ -557,43 +643,70 @@ a {
     .nav-ul {
         display: none;
     }
+    header {
+        justify-content: space-between;
+    }
     nav {
-        height: 100%;
+        height: 3rem;
         width: 100%;
-        display: none;
+    }
+    .-nav {
+        align-content: center;
+        padding-left: 1rem;
+        padding-right: 1.8rem;
     }
     .nav-responsive-ul {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 100%;
-        width: 100%;
-        background-color: #C7A6AD;
-        z-index: 5;
+        justify-content: space-between;
     }
-    .nav-li-contenedor {
-        width: 100%;
-    }
-    .nav-li-contenedor a {
-        width: 100%;
-        font-size: 1rem;
-    }
-    .nav.responsive.button.contenedor {
-        position: absolute;
-        width: 100%;
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
         display: flex;
-        justify-content:last baseline;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #C7A6AD;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.8rem;
+        width: 50%;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgb(79, 54, 75, .50);
     }
-    
-    .nav-responsive-button {
-        font-size: 2rem;
-        padding-left: 20rem;
-        padding-top: 2rem;
-        text-align: right;
+    .nav-responsive-li-cont {
+        flex-direction: column;
+        align-items: end;
+
+    }
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #4F364B;
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-responsive-ul img {
+        width: 10rem;
+        padding-top: 0.5rem;
     }
 
 .inicio-img {
+    display: none;
+}
+
+.buttons-inicio{
     display: none;
 }
 
@@ -747,24 +860,29 @@ a {
     }
     #button {
        width: 100%;
+       margin-bottom: 2rem;
     }
-    .footer-contacto {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
+    
+#Contacto {
+    padding-top: 2rem;
+}
     .Ministerio {
         padding-top: 5vh;
         width: 20rem;
         align-items: center;
+    }
+    .footer-brand {
+        width: 10rem;
     }
     .Institucional-flex {
         display: block;
     }
     .footer-contacto {
         flex-direction: column;
-        margin-top: 5vh;
+        margin-top: 1rem;
         text-align: left;
+        justify-content: space-between;
+        gap: 2rem;
     }
     .Acerca-de {
         display: none;
