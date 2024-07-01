@@ -104,7 +104,6 @@ nav ul li a:not(#brand) {
 } */
 .buttons-inicio{
     position: absolute;
-        z-index: 50;
     width: 100%;
     display: flex;
     justify-content: center;
