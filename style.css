@@ -5,6 +5,10 @@
 :root {
     scroll-behavior: smooth;
 }
+.wrapper-main {
+    width: 1260px;
+    margin: 0 auto;
+}
 h2 {
     color: #EE9046;
     font-family:  "Montserrat", sans-serif;
@@ -42,9 +46,11 @@ p {
     line-height: 1rem;
 }
 
-nav {
+nav  {
     justify-content: end;
     background-color: #C7A6AD;
+}
+.-nav {
     padding-inline:3.75rem;
     width: 100vw;
     box-sizing: border-box;
@@ -180,15 +186,15 @@ nav ul li a:not(#brand) {
 .inicio-slider input:nth-child(4):checked ~ .inicio-responsive-img {
     left: -300%;
 } */
-
+.cont-inicio-responsive-cel {
+    display: none;
+}
 #Proyecto {
     color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 3.png);
     background-size: cover;
     padding-bottom: 8rem;
     padding-top: 8rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
     align-content: flex-start;
 }
 .imagen-proyecto1 {
@@ -223,8 +229,6 @@ nav ul li a:not(#brand) {
     padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
-    padding-left: 6rem;
-    padding-right: 6rem;
     align-content: flex-start;
 }
 .contenedor-text-img-transparencia {
@@ -763,30 +767,34 @@ a {
         width: 11rem;
         padding-top: 0.5rem;
     }
+
     .contenedor-inicio {
         display: none;
     }
+    .cont-inicio-responsive {
+        display: none;
+    }
     
-.cont-inicio-responsive {
+.cont-inicio-responsive-cel {
     display: flex;
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
-.in-res-slider input{
+.in-res-slider-cel input{
     visibility: hidden;
     display: none;
 }
-.buttons-inicio-res {
+.buttons-inicio-res-cel {
     position: absolute;
     z-index: 300;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     gap: 2vw;
     bottom: 4vh;
 }
-.buttons-inicio-res label{
+.buttons-inicio-res-cel label{
     width: 1.2rem ;
     height:1.2rem;
     background-color: #4F364B;
@@ -795,24 +803,24 @@ a {
     cursor: pointer;
     transition: 300ms ease-in-out;
 }
-.buttons-inicio-res label:hover {
+.buttons-inicio-res-cel label:hover {
     scale: 1.2;
     opacity: 1;
 }
-.in-res-slider input:nth-child(1):checked ~ .buttons-inicio-res label:nth-child(1),
-.in-res-slider input:nth-child(2):checked ~ .buttons-inicio-res label:nth-child(2),
-.in-res-slider input:nth-child(3):checked ~ .buttons-inicio-res label:nth-child(3),
-.in-res-slider input:nth-child(4):checked ~ .buttons-inicio-res label:nth-child(4) {
+.in-res-slider-cel input:nth-child(1):checked ~ .buttons-inicio-res-cel label:nth-child(1),
+.in-res-slider-cel input:nth-child(2):checked ~ .buttons-inicio-res-cel label:nth-child(2),
+.in-res-slider-cel input:nth-child(3):checked ~ .buttons-inicio-res-cel label:nth-child(3),
+.in-res-slider-cel input:nth-child(4):checked ~ .buttons-inicio-res-cel label:nth-child(4) {
     opacity: 1;
 }
-.inicio-img-res{
+.inicio-img-res-cel{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     transition: 600ms ease-in-out;
 }
-.imagen-res-inicio1,.imagen-res-inicio2,.imagen-res-inicio3,.imagen-res-inicio4{
+.imagen-res-cel-inicio1,.imagen-res-cel-inicio2,.imagen-res-cel-inicio3,.imagen-res-cel-inicio4{
     position: relative;
     width: 100%;
     height: 100%;
@@ -820,16 +828,16 @@ a {
     align-items: center;
 }
 
-.in-res-slider input:nth-child(1):checked ~ .inicio-img-res{
-    left: 0;
+.in-res-slider-cel input:nth-child(1):checked ~ .inicio-img-res-cel{
+    left: -20%;
 }
-.in-res-slider input:nth-child(2):checked ~ .inicio-img-res{
-    left: -25%;
+.in-res-slider-cel input:nth-child(2):checked ~ .inicio-img-res-cel{
+    left: -170%;
 }
-.in-res-slider input:nth-child(3):checked ~ .inicio-img-res{
+.in-res-slider-cel input:nth-child(3):checked ~ .inicio-img-res-cel{
     left: -50%;
 }
-.in-res-slider input:nth-child(4):checked ~ .inicio-img-res{
+.in-res-slider-cel input:nth-child(4):checked ~ .inicio-img-res-cel{
     left: -75%; 
 }
 /* .in-res-slider input{
@@ -1056,5 +1064,81 @@ a {
     }
     .ayuda {
         display: none;
+    }
+
+@media only screen and (max-width: 400px) {
+        .contenedor-inicio {
+            display: none;
+        }
+        .cont-inicio-responsive-cel {
+            display: none;
+        }
+        
+    .cont-inicio-responsive {
+        display: flex;
+        position: unset;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .in-res-slider input{
+        visibility: hidden;
+        display: none;
+    }
+    .buttons-inicio-res {
+        position: absolute;
+        z-index: 300;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        bottom: 4vh;
+    }
+    .buttons-inicio-res label{
+        width: 1.2rem ;
+        height:1.2rem;
+        background-color: #4F364B;
+        border-radius: 100%;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+    .buttons-inicio-res label:hover {
+        scale: 1.2;
+        opacity: 1;
+    }
+    .in-res-slider input:nth-child(1):checked ~ .buttons-inicio-res label:nth-child(1),
+    .in-res-slider input:nth-child(2):checked ~ .buttons-inicio-res label:nth-child(2),
+    .in-res-slider input:nth-child(3):checked ~ .buttons-inicio-res label:nth-child(3),
+    .in-res-slider input:nth-child(4):checked ~ .buttons-inicio-res label:nth-child(4) {
+        opacity: 1;
+    }
+    .inicio-img-res{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        transition: 600ms ease-in-out;
+    }
+    .imagen-res-inicio1,.imagen-res-inicio2,.imagen-res-inicio3,.imagen-res-inicio4{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .in-res-slider input:nth-child(1):checked ~ .inicio-img-res{
+        left: 0;
+    }
+    .in-res-slider input:nth-child(2):checked ~ .inicio-img-res{
+        left: -25%;
+    }
+    .in-res-slider input:nth-child(3):checked ~ .inicio-img-res{
+        left: -50%;
+    }
+    .in-res-slider input:nth-child(4):checked ~ .inicio-img-res{
+        left: -75%; 
+    }
+
     }
 }
