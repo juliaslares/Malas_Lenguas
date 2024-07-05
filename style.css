@@ -5,17 +5,20 @@
 :root {
     scroll-behavior: smooth;
 }
-.wrapper-main {
+/* .wrapper-main {
     width: 1260px;
     margin: 0 auto;
-}
+} */
 h2 {
     color: #EE9046;
     font-family:  "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     box-sizing: content-box; 
-    line-height: 4.5rem;
+    line-height: 2.5rem;
+}
+h2:not(.titulo-transparencia){
+    padding-bottom: 1rem;
 }
 h3 {
     color: #F6E8CB;
@@ -42,8 +45,8 @@ p {
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     font-weight: 500;
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 0,9rem;
+    line-height: 1.2rem;
 }
 
 nav  {
@@ -196,21 +199,18 @@ nav ul li a:not(#brand) {
     padding-bottom: 8rem;
     padding-top: 8rem;
     align-content: flex-start;
+    padding-inline:3.75rem;
 }
-.imagen-proyecto1 {
-    padding-left: 0.8rem;
-}
-.imagen-proyecto2 {
-    padding-left: 4rem;
-    height: 35rem;
-}
+
 .imagenes-proyecto {
     display: flex;
     height: fit-content;
+    gap: 0.8rem;
 }
 .proyecto-flex {
     display: flex;
     justify-content: center;
+    gap: 4rem;
 }
 .proyecto-textil-texto {
     box-sizing: content-box;
@@ -226,7 +226,6 @@ nav ul li a:not(#brand) {
     color: #4F364B;
     background-image: url(./media/Campaña/textura-cartulina\ 2.png);
     background-size: cover;
-    padding-inline: 10vw;
     padding-bottom: 15vh;
     padding-top: 15vh;
     align-content: flex-start;
@@ -383,17 +382,15 @@ line-height: 2.5rem;
     background-size: cover;
     padding-bottom: 8rem;
     padding-top: 8rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
     align-content: flex-start;
 }
 .reinsercion-flex {
     display: flex;
     justify-content: center;
+    padding-inline:3.75rem;
 }
 .reinsercion-img {
-    padding-left: 0.3rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
     height: 26rem;
 }
 .reinsercion-texto {
@@ -409,27 +406,34 @@ line-height: 2.5rem;
 }
 .punteo-intitucional {
     color: #4F364B;
-    font-family: "Montserrat", sans-serif;
-    font-style: 400;
-    font-weight: 500;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
     display: inline;
 }
 .punteo-intitucional ul {
     padding-left: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: 400;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.punteo-intitucional ul li {
+    padding-left: 2rem;
 }
 .Institucional-columna-flex {
-    padding-right: 8rem;
+    padding-left: 6rem;
 }
 .Institucional-flex {
     display: flex;
     justify-content: center;
 }
 iframe {
-
-    width: 50%;
-
+  width: 50%;
+}
+.video {
+    display: flex;
+}
+.video-responsive {
+    display: none;
 }
 .button-movile {
     display: none;
@@ -534,6 +538,13 @@ a {
     }
     .reinsercion-img {
         width: 38rem;
+    }
+
+    .video {
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
     }
 
     .footer-contacto {
@@ -666,11 +677,16 @@ a {
         line-height: 0.8rem;
     }
     iframe {
-        aspect-ratio: 16/9;
         align-content: center;
         margin-top: 2rem;
-        width: 100%;
+        width: 50%;
         height: 20%;
+    }
+    .video {
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
     }
     .button-web {
         display: none;
@@ -1008,7 +1024,7 @@ a {
         padding-top: 4rem;
     }
     .Institucional-columna-flex {
-        padding-right: 0vw;
+        padding-left: 0vw;
     }
     .Institucional-flex {
         flex-direction: column;
@@ -1023,6 +1039,12 @@ a {
         margin-top: 2rem;
         width: 100%;
         height: 20%;
+    }
+    .video {
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
     }
     .button-web {
         display: none;
