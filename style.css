@@ -59,11 +59,12 @@ header {
     padding-inline:5rem;
     position: fixed;
     width: 100vw;
+    padding-top: 1rem;
     padding-left: 6rem;
     padding-right: 6rem;
     z-index: 9999;
 }
-.brand {
+.brand{
     width: 0.8rem;
 }
 .nav-ul {
