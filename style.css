@@ -59,10 +59,11 @@ header {
     padding-inline:5rem;
     position: fixed;
     width: 100vw;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-left: 6rem;
     padding-right: 6rem;
     z-index: 9999;
+    padding-bottom: 0.5rem;
 }
 .brand{
     width: 0.8rem;
@@ -248,21 +249,6 @@ line-height: 2.5rem;
     color: #fff;
 }
 
-#button {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  margin-top: 3rem;
-  padding: 2vh; 
-  background-color: #C7A6AD;
-  border-radius: 30px;
-  transition: background 0.2s;
-  align-content: flex-start;
-}
-#button:hover {
-    background-color: #4F364B;
-    color: #F6E8CB;
-}
 #Catalogo{
     text-align: left;
     background-color: #F5F5F5;
@@ -455,6 +441,21 @@ iframe {
 .button-movile {
     display: none;
 }
+#button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 3rem;
+    padding: 2vh; 
+    background-color: #C7A6AD;
+    border-radius: 30px;
+    transition: background 0.2s;
+    align-content: flex-start;
+  }
+  #button:hover {
+      background-color: #4F364B;
+      color: #F6E8CB;
+  }
 footer {
     background-color: #F5F5F5;
     padding-bottom: 3rem;
@@ -689,7 +690,12 @@ a {
     #Institucional {
         padding: 2rem;
         padding-top: 4rem;
+        padding-bottom: 4rem;
     }
+    .Institucional-flex {
+        align-items: center;
+    }
+
     .Institucional-columna-flex {
         padding-right: 0vw;
         padding-left: 3rem;
@@ -703,16 +709,17 @@ a {
         align-content: center;
         margin-top: 2rem;
         width: 50%;
+        height: 50vh;
     }
     
     #button {
-       width: 100%;
-       margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .footer-contacto {
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         text-align: left;
         justify-content: space-between;
         gap: 2rem;
@@ -729,9 +736,6 @@ a {
     p {
         font-size: 0.7rem;
         line-height: 0.8rem;
-    }
-    .reinsercion-flex {
-        flex-direction: column;
     }
     /* .nav-ul {
         position: fixed;
@@ -1001,19 +1005,7 @@ a {
         padding: 2rem;
         padding-top: 4rem;
     }
-    .columna-flex {
-        align-items: center;
-        padding-left: 0rem;
-        padding-bottom: 2rem;
-    }
-    .contenedor-text-img-transparencia {
-        display: block;
-    }
-    .imagen-transparencia1 {
-        width: 20rem;
-        padding-bottom: 2rem;
-        padding-left: 0rem;
-    }
+   
 
     #Catalogo {
         padding: 2rem;
@@ -1035,17 +1027,18 @@ a {
     }
 
 
-
     #Reinserción {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
     .reinsercion-flex {
-        flex-direction: column;
+        flex-direction: flex;
         padding:none;
+        align-items: center;
+        gap: 5rem;
     }
     .reinsercion-img {
-        width: 2vw;
+        width: 45vw;
         height: auto ;
         padding-top: 2rem;
         padding-left: 0%;
@@ -1057,11 +1050,13 @@ a {
         padding: 2rem;
         padding-top: 4rem;
     }
+    .Institucional-flex {
+        align-items: center;
+    }
     .Institucional-columna-flex {
         padding-left: 0vw;
-    }
-    .Institucional-flex {
-        flex-direction: column;
+        box-sizing: content-box;
+        align-items: center;
     }
     .punteo-intitucional {
         font-size: 0.7rem;
@@ -1071,26 +1066,11 @@ a {
         aspect-ratio: 16/9;
         align-content: center;
         margin-top: 2rem;
-        width: 2%;
-        height: 2%;
-    }
-    .video {
-        display: none;
-    }
-    .video-responsive {
-        display: flex;
-    }
-    .button-web {
-        display: none;
-    }
-    .button-movile {
-        display: flex;
-        box-sizing: border-box;
-        justify-content: center;
+        width: 50vw;
+        height: 25vh;
     }
     #button {
        width: 100%;
-       margin-bottom: 2rem;
     }
     
 #Contacto {
@@ -1103,9 +1083,6 @@ a {
     }
     .footer-brand {
         width: 10rem;
-    }
-    .Institucional-flex {
-        display: block;
     }
     .footer-contacto {
         flex-direction: column;
