@@ -725,7 +725,7 @@ a {
         gap: 2rem;
     }
 }
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1140px){
 
     h2 {
         font-size: 2rem;
@@ -737,7 +737,13 @@ a {
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
-    /* .nav-ul {
+    
+       
+    /*
+    .nav-ul {
+        display: none;
+    }
+         .nav-ul {
         position: fixed;
         --gap: 2em;
         inset: 0 0 0 30%;
@@ -1010,6 +1016,8 @@ a {
     #Catalogo {
         padding: 2rem;
         padding-top: 4rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
     }
     .catalogo-flex {
         padding-top: 1rem;
@@ -1054,11 +1062,19 @@ a {
         align-items: center;
     }
     .Institucional-columna-flex {
-        padding-left: 0vw;
+        padding-left: 2vw;
         box-sizing: content-box;
         align-items: center;
     }
+    .Institucional-columna-flex ul li{
+        padding-left: 0;
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+    }
+ 
+
     .punteo-intitucional {
+
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
@@ -1067,7 +1083,7 @@ a {
         align-content: center;
         margin-top: 2rem;
         width: 50vw;
-        height: 25vh;
+        height: 50vh;
     }
     #button {
        width: 100%;
