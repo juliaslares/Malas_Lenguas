@@ -16,19 +16,50 @@
 
 <body>
     <script src="main.js"></script>
-<header>    
-    <nav class="-nav">
-        <ul class="nav-ul"> 
-           <li><a id="brand" href="index.html"><img src="./media/brand/malas lenguas crema-02 1.png" alt="Signo2"></a></li>
-           <li><a class="nav-li" href="#Proyecto">Proyecto textil</a></li>
-           <li><a class="nav-li" href="#Transparencia">Transparencia</a></li>
-           <li><a class="nav-li" href="#Catalogo">Catálogo</a></li>
-           <li><a class="nav-li" href="#Reinserción">Reinserción</a></li>
-           <li><a class="nav-li" href="#Institucional">Institucional</a></li>
-           <li><a class="nav-li" href="#Contacto">Contacto</a></li>
-        </ul>
 
-        <ul class="nav-responsive-ul"> 
+<header class="header- flex">   
+    <div class="brand"><a href="index.html">
+        <img src="./media/brand/malas lenguas crema-02 2.png" alt="Signo1">
+     </a></div>
+     <button class="abrir-menu" id="abrir"><i class="fas fa-bars"></i></button>
+    <nav class="-nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="fas fa-x"></i></button>
+        <ul id="nav-ul" class="nav-ul flex">
+            <li><a class="nav-li" href="#Proyecto">Proyecto textil</a></li>
+            <li><a class="nav-li" href="#Transparencia">Transparencia</a></li>
+            <li><a class="nav-li" href="#Catalogo">Catálogo</a></li>
+            <li><a class="nav-li" href="#Reinserción">Reinserción</a></li>
+            <li><a class="nav-li" href="#Institucional">Institucional</a></li>
+            <li><a class="nav-li" href="#Contacto">Contacto</a></li>
+         </ul>
+    <!-- <div class="brand"><a href="index.html">
+        <img src="./media/brand/malas lenguas crema-02 2.png" alt="Signo1">
+     </a></div>
+
+    <nav class="-nav">
+        <ul id="nav-ul" class="nav-ul flex"> 
+            <button class="abrir-menu" id="abrir"><i class="fas fa-bars"></i></button>
+        
+            <div class="mobile.nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><i class="fas fa-x"></i></button>
+            <div class="nav-responsive-li-cont">
+          
+           <li><a class="nav-li" href="#Proyecto">Proyecto textil
+           </a></li>
+           <li><a class="nav-li" href="#Transparencia">Transparencia
+           </a></li>
+           <li><a class="nav-li" href="#Catalogo">Catálogo
+           </a></li>
+           <li><a class="nav-li" href="#Reinserción">Reinserción
+           </a></li>
+           <li><a class="nav-li" href="#Institucional">Institucional
+           </a></li>
+           <li><a class="nav-li" href="#Contacto">Contacto
+           </a></li>
+        </div>
+        </ul> -->
+
+        <!-- <ul class="nav-responsive-ul"> 
             <a id="brand" href="index.html"><img src="./media/brand/malas lenguas crema-02 1.png" alt="Signo2"></a>
             <button class="abrir-menu" id="abrir"><i class="fas fa-bars"></i></button>
         
@@ -43,7 +74,7 @@
             <li><a class="nav-responsive-li" href="#Contacto">Contacto</a></li>
         </div>
             </div>
-         </ul>
+         </ul> -->
     </nav>
 </header>  
 
@@ -63,10 +94,10 @@
         </div>
 
         <div class="inicio-img">
-            <img class="imagen-inicio1" src="./media/Campaña/slider.inicio4.png"" alt="imagen.ref.4">
-            <img class="imagen-inicio2" src="./media/Campaña/DSC_5860.jpg" alt="imagen.ref.3" >
+            <img class="imagen-inicio1" src="./media/Campaña/Group 43.png"" alt="imagen.ref.4">
+            <img class="imagen-inicio2" src="./media/Campaña/DSC_6038.jpg" alt="imagen.ref.3" >
             <img class="imagen-inicio3" src="./media/Campaña/DSC_5854.jpg" alt="imagen.ref.2" >
-            <img class="imagen-inicio4" src="./media/Campaña/slider.inicio4.png" alt="imagen.principal.1" >
+            <img class="imagen-inicio4" src="./media/Campaña/DSC_6033.jpg" alt="imagen.principal.1" >
         </div>
     </div>
 </div>
@@ -92,7 +123,9 @@
         </div>
     </div>
 </div>
-<div class="cont-inicio-responsive">
+
+
+<!-- <div class="cont-inicio-responsive">
     <div class="in-res-slider">
         <input type="radio" name="slider" id="res-slider1" checked>
         <input type="radio" name="slider" id="res-slider2" checked>
@@ -113,7 +146,7 @@
             <img class="img-res-inicio4" src="./media/Campaña/slider-responsive (4).png" alt="imagen.principal.1" >
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- <div class="contenedor-responsive-inicio">
     <div class="inicio-responsive-slider">
@@ -166,7 +199,7 @@
 </div>
 </section>
 
-<div class="icon-flex wrapper-main">
+<div class="icon-flex ">
     <div class="icon" >
         <img class="icon-solo" src="./media/brand/talles reales-01 1.png" alt="talles.reales" width="">
         <!-- <div class="icon-text">
@@ -205,8 +238,8 @@
     <div class="columna-flex">
     <h2 class="titulo-transparencia">Prendas con <br>transparencia</h2>
         <p> Consideramos el hacer y consumir la moda 
-        <br> de manera consciente e intencionada,  
-        <br> por eso nuestras prendas son realizadas en pequeñas 
+        <br> de manera consciente e intencionada, por  
+        <br> eso nuestras prendas son realizadas en pequeñas 
         <br> cantidades, de forma atemporal, con telas nobles, 
         <br> prestándole atención a los pequeños detalles
         <br>  y a la formación de aquellas que las realizan. 
@@ -233,6 +266,7 @@
 
 
 <section id="Catalogo">
+    <div class="catalogo">
     <div>
         <h2>Catálogo</h2>
         <!-- <p>En Malas Lenguas confeccionamos prendas sin género para talles reales “hecho por personas reales para personas reales”. <br>
@@ -243,7 +277,7 @@
     <div class="catalogo-flex">
         <div class="catalogo-slider">
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Camisa Rosada.png" alt="camisa1">
+            <img class="ropa-img1" src="./media/Ropa/Camisa Rosada.png" alt="camisa1">
             <div class="catalogo">
               <h4>Camisa</h4>
               <!-- <h5>Camisa de poplin con lisa - Mangas largas. <br>
@@ -255,7 +289,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Pañuelo.png" alt="pañuelo1">
+            <img class="ropa-img2" src="./media/Ropa/Pañuelo.png" alt="pañuelo1">
             <div class="catalogo">
               <h4>Pañuelo</h4>
               <!-- <h5>Camisa de poplin con lisa - Mangas largas. <br>
@@ -268,7 +302,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Saco Negro.png" alt="saco1">
+            <img class="ropa-img3" src="./media/Ropa/Saco Negro.png" alt="saco1">
             <div class="catalogo"> 
               <h4>Saco Sobretodo</h4>
               <!-- <h5>Material: Lana<br>
@@ -281,7 +315,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Pantalon.png" alt="camisa1">
+            <img class="ropa-img4" src="./media/Ropa/Pantalon.png" alt="camisa1">
             <div class="catalogo">
               <h4>Pantalones cargo wide</h4>
               <!-- <h5>Material: algodón, con cintura elastizada<br>
@@ -294,7 +328,7 @@
         </div>
 
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" class="camisa-hover" src="./media/Ropa/Camisa Rosada.png" alt="camisa1">
+            <img class="ropa-img1" src="./media/Ropa/Camisa Rosada.png" alt="camisa1">
             <div class="catalogo">
               <h4>Camisa</h4>
               <!-- <h5>Camisa de poplin con lisa - Mangas largas. <br>
@@ -306,7 +340,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Pañuelo.png" alt="pañuelo1">
+            <img class="ropa-img2" src="./media/Ropa/Pañuelo.png" alt="pañuelo1">
             <div class="catalogo">
               <h4>Pañuelo</h4>
               <!-- <h5>Camisa de poplin con lisa - Mangas largas. <br>
@@ -319,7 +353,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Saco Negro.png" alt="saco1">
+            <img class="ropa-img3" src="./media/Ropa/Saco Negro.png" alt="saco1">
             <div class="catalogo"> 
              <h4>Saco Sobretodo</h4>
                <!-- <h5>Material: Lana<br>
@@ -332,7 +366,7 @@
             </div>
         </div>
         <div class="catalogo-imagen-texto" >
-            <img class="ropa-img" src="./media/Ropa/Pantalon.png" alt="camisa1">
+            <img class="ropa-img4" src="./media/Ropa/Pantalon.png" alt="camisa1">
             <div class="catalogo">
               <h4>Pantalones cargo wide</h4>
               <!-- <h5>Material: algodón, con cintura elastizada<br>
@@ -344,10 +378,11 @@
             </div>
         </div>
         </div>   
-    </div>   
+    </div>
+</div>  
 </section>
 <section id="Reinserción">
-    <div class="reinsercion-flex">
+    <div class="reinsercion-flex ">
         <div class="reinsercion-columna">
         <div class="reinsercion-texto"><h2>Reinserción Laboral</h2>
             <p>En Malas Lenguas buscamos a través 
@@ -369,7 +404,7 @@
 </section>
 <section id="Institucional">
     <div>
-        <div class="Institucional-flex"> 
+        <div class="Institucional-flex wrapper-main"> 
     <!-- <img src="./media/Campaña/DSC_5860.jpg" width="50%" alt="video"> muy pesado-->
     <iframe class="video"  src="https://drive.google.com/file/d/1SKYhnnQI6SfcLj6FmTopZyKYg0z5FVEc/preview" controls></iframe>
             <div class="Institucional-columna-flex">
@@ -404,7 +439,7 @@
 </main>
 
 <footer id="Contacto">
-<section  class="footer-contacto wrapper-main">
+<section  class="footer-contacto">
     <img class="footer-brand"  src="./media/brand/marca nueva2.png" alt="MLnuevo">
     <img class="Ministerio" src="./media/brand/minjust 1.png" alt="ministerio de justicia y derechos humanos">
 <div class="Acerca-de"><a href="index.html"><h5>Inicio</h5></a>

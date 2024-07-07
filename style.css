@@ -5,11 +5,13 @@
 :root {
     scroll-behavior: smooth;
 }
-/* .wrapper-main {
-    width: 1260px;
+
+.wrapper-main {
+    width: 1300px;
     margin: 0 auto;
-} */
-h2 {
+} 
+
+h2{
     color: #EE9046;
     font-family:  "Montserrat", sans-serif;
     font-weight: 700;
@@ -48,45 +50,92 @@ p {
     font-size: 0,9rem;
     line-height: 1.2rem;
 }
-
-nav  {
-    justify-content: end;
-    background-color: #C7A6AD;
-}
-.-nav {
-    padding-inline:3.75rem;
-    width: 100vw;
+header {
+    display: flex;
     box-sizing: border-box;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #C7A6AD;
+    padding-inline:5rem;
     position: fixed;
-    z-index: 2;
+    width: 100vw;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    z-index: 9999;
 }
-.nav-responsive-ul {
-    display: none;
+.brand {
+    width: 1rem;
 }
-
-nav ul {
+.nav-ul {
     display: flex;
-    width: 100%; 
-    align-items: center;
-}
-nav ul li {
     list-style: none;
-    height: 4rem;
+    gap: 2rem;
 }
-nav ul li a {
+.brand, .nav-ul {
+    max-height: 1300px;
+}
+.nav-ul li a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: light;
-    color: #000;
+    font-weight: 600;
+    color: #4F364B;
     font-size: 0.8rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
-nav ul li a:not(#brand) {
-    padding-left: 2rem;
+.nav-ul li a:hover {
+    color: #D9D9D9;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+    }
+
+@media screen and (max-width:550px) {
+    .-nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .brand {
+        display: none;
+    }
+    .-nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #715B6D;
+        padding: 2rem;
+        width: 40%;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+    .abrir-menu, .cerrar-menu {
+        display: flex;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #C7A6AD;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: start;
+        padding-right: 2.5rem;
+    }
+    .nav-ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: #C7A6AD;
+        font-size: 0.8rem;
+    }
 }
 
 .contenedor-inicio {
@@ -103,7 +152,7 @@ nav ul li a:not(#brand) {
 }
 .buttons-inicio{
     position: absolute;
-    z-index: 30;
+    z-index: 3;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -193,6 +242,8 @@ nav ul li a:not(#brand) {
     padding-top: 8rem;
     align-content: flex-start;
     padding-inline:3.75rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .imagenes-proyecto {
@@ -222,6 +273,8 @@ nav ul li a:not(#brand) {
     padding-bottom: 15vh;
     padding-top: 15vh;
     align-content: flex-start;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 .contenedor-text-img-transparencia {
     display: flex;
@@ -230,6 +283,7 @@ nav ul li a:not(#brand) {
 }
 .imagen-transparencia1 {
     object-fit: cover;
+    width: 30vw;
     padding-left: 2vw ;
 }
 .columna-flex {
@@ -283,7 +337,7 @@ line-height: 2.5rem;
     height: 0.6rem;
 }
 .catalogo-flex ::-webkit-scrollbar-thumb{
-    background: #A6BFB2;
+    background: #C7A6AD;
     border-radius: 8rem;
     width: 0.1rem;
 }
@@ -294,6 +348,23 @@ line-height: 2.5rem;
     object-fit: cover;
     scroll-snap-align: center;
     overflow-y: auto;
+}
+/* .ropa-img1, .ropa-img2, .ropa-img3, .ropa-img4 {
+    transition: ease-in 40s;
+}
+.ropa-img1:hover, .ropa-img2:hover, .ropa-img3:hover, .ropa-img4:hover {
+    opacity: 1;
+} */
+.ropa-img1:hover {
+    content:url(./media/Ropa/HOVER\ \(4\).png);
+}
+.ropa-img2:hover {
+    content:url(./media/Ropa/HOVER\ \(1\).png);
+}
+.ropa-img3:hover {
+    content:url(./media/Ropa/HOVER\ \(3\).png);
+}.ropa-img4:hover {
+    content:url(./media/Ropa/HOVER\ \(2\).png);
 }
 /* .catalogo-flex :before {
     position: sticky;
@@ -376,15 +447,16 @@ line-height: 2.5rem;
     padding-bottom: 8rem;
     padding-top: 8rem;
     align-content: flex-start;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 .reinsercion-flex {
     display: flex;
     justify-content: center;
-    padding-inline:3.75rem;
 }
 .reinsercion-img {
     padding-left: 3rem;
-    height: 26rem;
+    height: 25rem;
 }
 .reinsercion-texto {
     box-sizing: content-box;
@@ -553,7 +625,7 @@ a {
     }
 }
 @media only screen and (max-width: 1100px){
-    .nav-ul {
+    /* .nav-ul {
         display: none;
     }
     header {
@@ -604,7 +676,7 @@ a {
     .nav.visible{
         opacity: 1;
         visibility: visible;
-    }
+    } */
 
     .buttons-inicio{
         opacity: 0;
@@ -703,6 +775,10 @@ a {
     }
 }
 @media only screen and (max-width: 800px){
+    .wrapper-main {
+        width: 400px;
+        margin: 0 auto;
+    }
     h2 {
         font-size: 2rem;
         line-height: 2.8rem;
@@ -714,7 +790,36 @@ a {
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
-    .nav-ul {
+    /* .nav-ul {
+        position: fixed;
+        --gap: 2em;
+        inset: 0 0 0 30%;
+        background: #95B4D1;
+        flex-direction: column;
+        padding-top: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        z-index: 1000;
+    }
+    .mobile.nav {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 5rem;
+        aspect-ratio: 1;
+        right: 2rem;
+        z-index: 9999;
+    }
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #F6E8CB;
+    } */
+
+    /* .nav-ul {
         display: none;
     }
     header {
@@ -774,7 +879,7 @@ a {
     .nav-responsive-ul img {
         width: 11rem;
         padding-top: 0.5rem;
-    }
+    } */
 
     .contenedor-inicio {
         display: none;
@@ -795,7 +900,7 @@ a {
 }
 .buttons-inicio-res-cel {
     position: absolute;
-    z-index: 300;
+    z-index: 30;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -926,33 +1031,31 @@ a {
     }
     .imagen-proyecto1 {
         display: flex;
-        height: 12rem;
-        width: 12rem;
+     aspect-ratio: 1/2;
+     width: 3rem;
         padding-left: 1rem;
-        padding-top: 3rem;
     }
     .imagen-proyecto2 {
-        height: 12rem;
-        width: 12rem;
+        aspect-ratio: 1;
+        width: 3rem;
         padding-left: 0rem;
-        padding-top: 3rem;
     }
 
     .icon-flex {
         display: flex;
-        padding: 2rem;
         align-content: center;
         justify-content: space-around;
         object-fit: contain;
-        gap: 1rem;
         background-color: #F5F5F5;
+        gap: .5rem;
     }
     .icon {
-        width: 10rem;
+        aspect-ratio: 1;
+        width: 2rem;
     }
     .icon-solo {
-        width: 100%;
-        height: 100%;
+       aspect-ratio: 1;
+       width: 2rem;
     }
     
 
@@ -996,15 +1099,15 @@ a {
 
 
     #Reinserción {
-        padding: 2rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
     .reinsercion-flex {
         flex-direction: column;
+        padding:none;
     }
     .reinsercion-img {
-        width: auto;
+        width: 2vw;
         height: auto ;
         padding-top: 2rem;
         padding-left: 0%;
@@ -1030,8 +1133,8 @@ a {
         aspect-ratio: 16/9;
         align-content: center;
         margin-top: 2rem;
-        width: 100%;
-        height: 20%;
+        width: 2%;
+        height: 2%;
     }
     .video {
         display: none;
@@ -1057,7 +1160,7 @@ a {
 }
     .Ministerio {
         padding-top: 5vh;
-        width: 20rem;
+        width: 22rem;
         align-items: center;
     }
     .footer-brand {
