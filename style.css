@@ -586,7 +586,7 @@ a {
     }
     .reinsercion-img {
         width: 40vw;
-        height: 40vh;
+        height: 25vh;
     }
 
     .punteo-intitucional ul {
@@ -739,7 +739,7 @@ a {
         align-content: center;
         margin-top: 2rem;
         width: 50%;
-        height: 50vh;
+        height: 25vh;
     }
     
     #button {
@@ -769,6 +769,10 @@ a {
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
+    header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
   .abrir-menu, .cerrar-menu {
         display: block;
     }
@@ -790,7 +794,7 @@ a {
         background-color: #C7A6AD;
         padding-top: 2rem;
         padding-left: 3rem;
-        padding-right: 6rem;
+        padding-right: 3rem;
         bottom: 0;
         height: 100vh;
         box-shadow: 0 0 0 100vmax rgb(79, 54, 75, .50);
@@ -800,6 +804,7 @@ a {
         justify-content: flex-end;
         border: 0;
         font-size: 1.5rem;
+        aspect-ratio: 1;
         background-color: transparent;
         cursor: pointer;
         color: #4F364B;
@@ -996,7 +1001,9 @@ a {
         line-height: 0.8rem;
     }
  
-
+    #Institucional {
+        padding-bottom: 4rem;
+    }
     .punteo-intitucional {
         font-size: 0.7rem;
         line-height: 0.8rem;
@@ -1006,7 +1013,10 @@ a {
         align-content: center;
         margin-top: 2rem;
         width: 50vw;
-        height: 50vh;
+        height: 20vh;
+    }
+    .Ministerio {
+        padding-top: 2rem;
     }
     #button {
        width: 100%;
@@ -1015,11 +1025,6 @@ a {
 #Contacto {
     padding-top: 2rem;
 }
-    .Ministerio {
-        padding-top: 5vh;
-        width: 22rem;
-        align-items: center;
-    }
     .footer-brand {
         width: 10rem;
     }
@@ -1037,6 +1042,104 @@ a {
         display: none;
     }
 @media only screen and (max-width:900px) {
+    .proyecto-flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .imagen-proyecto1, .imagen-proyecto2 {
+        display: flex;
+        width: 50%;
+        padding: 0;
+    }
+
+    .icon-flex {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 1.2rem;
+    }
+    .icon {
+        width: 8rem;
+        align-content: center;
+        justify-content: center;
+    }
+    .icon-solo {
+        width: 8rem;
+    }
+
+.contenedor-text-img-transparencia {
+    flex-direction: column;
+}
+.columna-flex {
+    padding-left: 0;
+}
+    .imagen-transparencia1 {
+        aspect-ratio: 2/1;
+        width: 100%;
+        padding-left: 0;
+    }
+    .imagen-transparencia2 {
+        display: none;
+    }
+
+    #Catalogo {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .catalogo-slider::-webkit-scrollbar{
+       display:none ;
+    }
+
+    .catalogo-imagen-texto {
+        padding-right: .8rem;
+    }
+
+
+    .reinsercion-flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    .reinsercion-img {
+        padding-left: 0;
+        width: 100%;
+        height: 50%;
+        padding-top: 0;
+    }
+
+    .Institucional-flex {
+        justify-content: center;
+    }
+    .Institucional-columna-flex {
+        padding-left: 0;
+    }
+
+    .video{
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
+        width: 80vw;
+        height: 80%;
+    }
+    .button-web {
+        display: flex;
+        justify-content: center;
+    }
+    #button {
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+
+
+
     .contenedor-inicio {
         display: none;
     }
@@ -1109,64 +1212,6 @@ a {
 }
 
 @media only screen and (max-width:770px) {
-    h4 {
-        font-size: 1.5rem;
-    }
-    /* .-nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    .brand {
-        display: none;
-    }
-    .-nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #715B6D;
-        padding: 2rem;
-        width: 40%;
-        height: 100vh;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-    .abrir-menu, .cerrar-menu {
-        display: flex;
-        border: 0;
-        font-size: 1.5rem;
-        background-color: transparent;
-        cursor: pointer;
-        color: #C7A6AD;
-    }
-    .nav-ul {
-        flex-direction: column;
-        align-items: start;
-        padding-right: 2.5rem;
-    } */
-    /* .nav-ul li a {
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        color: #C7A6AD;
-        font-size: 0.8rem;
-    } */
-
-    .proyecto-flex {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .imagen-proyecto1, .imagen-proyecto2 {
-        display: flex;
-        width: 50%;
-        padding: 0;
-    }
-
     .icon-flex {
         display: flex;
         width: 100%;
@@ -1174,75 +1219,12 @@ a {
         gap: 1.2rem;
     }
     .icon {
-        width: 5rem;
+        width: 6rem;
         align-content: center;
         justify-content: center;
     }
     .icon-solo {
-        width: 5rem;
-    }
-
-.contenedor-text-img-transparencia {
-    flex-direction: column;
-}
-.columna-flex {
-    padding-left: 0;
-}
-    .imagen-transparencia1 {
-        aspect-ratio: 2/1;
-        width: 100%;
-        padding-left: 0;
-    }
-    .imagen-transparencia2 {
-        display: none;
-    }
-
-    #Catalogo {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .catalogo-slider::-webkit-scrollbar{
-       display:none ;
-    }
-
-    .catalogo-imagen-texto {
-        padding-right: .8rem;
-    }
-
-
-    .reinsercion-flex {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
-    }
-    .reinsercion-img {
-        padding-left: 0;
-        width: 100%;
-        height: 50%;
-        padding-top: 0;
-    }
-
-    .Institucional-flex {
-        justify-content: center;
-    }
-    .Institucional-columna-flex {
-        padding-left: 0;
-    }
-
-    .video{
-        display: none;
-    }
-    .video-responsive {
-        display: flex;
-        width: 80vw;
-        height: 80%;
-    }
-    .button-web {
-        display: flex;
-        justify-content: center;
-    }
-    #button {
-        width: 80%;
+        width: 6rem;
     }
 
     #Contacto {
@@ -1256,6 +1238,13 @@ a {
     }
 }
 @media only screen and (max-width: 580px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    header img {
+        width: 15rem;
+    }
         .contenedor-inicio {
             display: none;
         }
@@ -1334,13 +1323,23 @@ a {
         justify-content: space-evenly;
     }
     .icon {
-        width: 3rem;
+        width: 5rem;
         align-content: center;
         justify-content: center;
     }
     .icon-solo {
-        width: 3rem;
+        width: 5rem;
     }
 
+    .catalogo-imagen-texto img {
+        width: 50vw;
+    }
+    .color1,.color2,.color3,.color4,.color5,.color6 {
+        width: 1rem;
+        height: 1rem;
+    }
+    .boxes-flex {
+        padding-top: 1rem;
+    }
     }
 }
