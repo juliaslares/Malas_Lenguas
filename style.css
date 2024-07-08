@@ -65,6 +65,9 @@ header {
     z-index: 9999;
     padding-bottom: 0.5rem;
 }
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
 .brand{
     width: 0.8rem;
 }
@@ -85,12 +88,9 @@ header {
     font-size: 0.8rem;
 }
 .nav-ul li a:hover {
-    color: #D9D9D9;
+    color: #F6E8CB;
 }
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-    }
+
 .contenedor-inicio {
     position: relative;
     height: 100vh;
@@ -100,9 +100,7 @@ header {
     visibility: hidden;
     display: none;
 }
-.cont-inicio-responsive {
-    display: none;
-}
+
 .buttons-inicio{
     position: absolute;
     z-index: 3;
@@ -137,14 +135,17 @@ header {
     height: 100%;
     display: flex;
     transition: 400ms ease-in-out;
+
+    /* animation: slide 6s infinite alternate ease-in-out; */
 }
 
 .imagen-inicio1,.imagen-inicio2,.imagen-inicio3,.imagen-inicio4{
     position: relative;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
 }
 .imagen-responsive-inicio1,.imagen-responsive-inicio2,.imagen-responsive-inicio3,.imagen-responsive-inicio4{
     position: relative;
@@ -165,6 +166,19 @@ header {
 .inicio-slider input:nth-child(4):checked ~ .inicio-img {
     left: -300%;
 }
+/* @keyframes inicio-img {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+} */
 /* .inicio-responsive-img {
     position: relative;
     width: 100%;
@@ -416,7 +430,7 @@ line-height: 2.5rem;
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0,9rem;
     line-height: 1.2rem;
 }
 .Institucional-columna-flex ul li{
@@ -539,10 +553,16 @@ a {
 
     .icon-flex {
         display: flex;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         justify-content: center;
-        gap: 3rem;
+        gap: 4rem;
+    }
+    .icon {
+        width: 8rem;
+    }
+    .icon-solo {
+        width: 8rem;
     }
     .contenedor-text-img-transparencia {
         display: flex;
@@ -553,17 +573,25 @@ a {
     }
     .imagen-transparencia1 {
         aspect-ratio: 1;
+        width: 18rem;
     }
     .imagen-transparencia2 {
         aspect-ratio: 1;
+        width: 18rem;
     }
 
     .reinsercion-flex {
         display: flex;
-        justify-content: start;
+        justify-content: center;
     }
     .reinsercion-img {
-        width: 38rem;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .punteo-intitucional ul {
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 
     .footer-contacto {
@@ -579,7 +607,7 @@ a {
         display: none;
     }
 }
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1200px){
     /* .nav-ul {
         display: none;
     }
@@ -650,7 +678,7 @@ a {
 
 
     .icon-solo {
-        width: 7rem;
+        width: 8rem;
     }
 
     #Transparencia {
@@ -726,8 +754,10 @@ a {
         justify-content: space-between;
         gap: 2rem;
     }
+
+
 }
-@media only screen and (max-width: 1140px){
+@media only screen and (max-width: 1130px){
 
     h2 {
         font-size: 2rem;
@@ -739,8 +769,60 @@ a {
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
-    
-       
+  .abrir-menu, .cerrar-menu {
+        display: block;
+    }
+    .-nav ul{
+        align-items: start;
+        font-size: 1rem;
+    }
+    .-nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #C7A6AD;
+        padding-top: 2rem;
+        padding-left: 3rem;
+        padding-right: 6rem;
+        bottom: 0;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgb(79, 54, 75, .50);
+    }
+   .cerrar-menu{
+        display: flex;
+        justify-content: flex-end;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #4F364B;
+    }
+    .abrir-menu {
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #4F364B;
+    }
+   
+    .-nav.visible {
+        opacity: 1;
+        visibility: visible;
+        width: 30vw;
+    }
+    .-nav ul {
+        justify-content:start;
+    }
+    .nav-ul {
+        flex-direction: column;
+    }
     /*
     .nav-ul {
         display: none;
@@ -916,10 +998,7 @@ a {
         justify-content: flex-start;
     }
     .imagen-proyecto1 {
-        display: flex;
-     aspect-ratio: 1;
-     width: 18rem;
-        padding-left: 1rem;
+        display:none;
     }
     .imagen-proyecto2 {
         aspect-ratio: 1;
@@ -931,11 +1010,12 @@ a {
         display: flex;
         align-content: center;
         background-color: #F5F5F5;
-        gap: 10rem;
+        gap: 2rem;
+        justify-content: space-evenly;
     }
     .icon {
         aspect-ratio: 1;
-        width: 2rem;
+        width: 8rem;
     }
     .icon-solo {
        aspect-ratio: 1;
@@ -946,6 +1026,9 @@ a {
     #Transparencia {
         padding: 2rem;
         padding-top: 4rem;
+    }
+    .imagen-transparencia2 {
+        display: none;
     }
    
 
@@ -1119,7 +1202,155 @@ a {
 }
     
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width:770px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+    /* .-nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .brand {
+        display: none;
+    }
+    .-nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #715B6D;
+        padding: 2rem;
+        width: 40%;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+    .abrir-menu, .cerrar-menu {
+        display: flex;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #C7A6AD;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: start;
+        padding-right: 2.5rem;
+    } */
+    /* .nav-ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: #C7A6AD;
+        font-size: 0.8rem;
+    } */
+
+    .proyecto-flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .imagen-proyecto1, .imagen-proyecto2 {
+        display: flex;
+        width: 50%;
+        padding: 0;
+    }
+
+    .icon-flex {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 1.2rem;
+    }
+    .icon {
+        width: 5rem;
+        align-content: center;
+        justify-content: center;
+    }
+    .icon-solo {
+        width: 5rem;
+    }
+
+.contenedor-text-img-transparencia {
+    flex-direction: column;
+}
+.columna-flex {
+    padding-left: 0;
+}
+    .imagen-transparencia1 {
+        aspect-ratio: 2/1;
+        width: 100%;
+        padding-left: 0;
+    }
+    .imagen-transparencia2 {
+        display: none;
+    }
+
+    #Catalogo {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .catalogo-slider::-webkit-scrollbar{
+       display:none ;
+    }
+
+    .catalogo-imagen-texto {
+        padding-right: .8rem;
+    }
+
+
+    .reinsercion-flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    .reinsercion-img {
+        padding-left: 0;
+        width: 100%;
+        height: 50%;
+        padding-top: 0;
+    }
+
+    .Institucional-flex {
+        justify-content: center;
+    }
+    .Institucional-columna-flex {
+        padding-left: 0;
+    }
+
+    .video{
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
+        width: 80vw;
+        height: 80%;
+    }
+    .button-web {
+        display: flex;
+        justify-content: center;
+    }
+    #button {
+        width: 80%;
+    }
+
+    #Contacto {
+        padding-top: 2rem;
+    }
+    .footer-brand {
+        width: 25vw;
+    }
+    .Ministerio {
+        width: 60vw;
+    }
+}
+@media only screen and (max-width: 580px) {
         .contenedor-inicio {
             display: none;
         }
@@ -1192,117 +1423,19 @@ a {
     .in-res-slider input:nth-child(4):checked ~ .inicio-img-res{
         left: -75%; 
     }
-
-    }
-}
-@media screen and (max-width:550px) {
-    h4 {
-        font-size: 1.5rem;
-    }
-    .-nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    .brand {
-        display: none;
-    }
-    .-nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #715B6D;
-        padding: 2rem;
-        width: 40%;
-        height: 100vh;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-    .abrir-menu, .cerrar-menu {
-        display: flex;
-        border: 0;
-        font-size: 1.5rem;
-        background-color: transparent;
-        cursor: pointer;
-        color: #C7A6AD;
-    }
-    .nav-ul {
-        flex-direction: column;
-        align-items: start;
-        padding-right: 2.5rem;
-    }
-    .nav-ul li a {
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        color: #C7A6AD;
-        font-size: 0.8rem;
-    }
-
-    .proyecto-flex {
-        flex-direction: column;
-    }
-    .imagen-proyecto1, .imagen-proyecto2 {
-        display: none;
-    }
-
     .icon-flex {
-        display: none;
-    }
-
-
-    .imagen-transparencia2 {
-        display: none;
-    }
-
-    #Catalogo {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .catalogo-slider::-webkit-scrollbar{
-       display:none ;
-    }
-
-    .catalogo-imagen-texto {
-        padding-right: .8rem;
-    }
-
-
-    .reinsercion-flex {
-        flex-direction: column;
-        gap: none;
-    }
-    .reinsercion-img {
-        padding-left: 0;
-        width: 100%;
-        height: 50%;
-    }
-
-    .Institucional-columna-flex {
-        padding-left: 0;
-    }
-
-    .video{
-        display: none;
-    }
-    .video-responsive {
         display: flex;
         width: 100%;
-        height: 80%;
+        justify-content: space-evenly;
+    }
+    .icon {
+        width: 3rem;
+        align-content: center;
+        justify-content: center;
+    }
+    .icon-solo {
+        width: 3rem;
     }
 
-    #Contacto {
-        padding-top: 2rem;
-    }
-    .footer-brand {
-        width: 40vw;
-    }
-    .Ministerio {
-        width: 60vw;
     }
 }
