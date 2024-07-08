@@ -551,7 +551,7 @@ a {
         padding-left: 1.5rem;
     }
     .imagen-transparencia1 {
-        width:5rem;
+        aspect-ratio: 1;
     }
     .imagen-transparencia2 {
         aspect-ratio: 1;
