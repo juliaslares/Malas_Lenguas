@@ -419,9 +419,10 @@ line-height: 2.5rem;
     font-size: 1rem;
     line-height: 1.2rem;
 }
-.punteo-intitucional ul li {
-    padding-left: 2rem;
+.Institucional-columna-flex ul li{
+    padding-left: 0;
 }
+
 .Institucional-columna-flex {
     padding-left: 6rem;
 }
@@ -725,7 +726,7 @@ a {
         gap: 2rem;
     }
 }
-@media only screen and (max-width: 1140px){
+@media only screen and (min-width: 1140px){
 
     h2 {
         font-size: 2rem;
@@ -834,78 +835,7 @@ a {
         padding-top: 0.5rem;
     } */
 
-    .contenedor-inicio {
-        display: none;
-    }
-    .cont-inicio-responsive {
-        display: none;
-    }
-    
-.cont-inicio-responsive-cel {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-.in-res-slider-cel input{
-    visibility: hidden;
-    display: none;
-}
-.buttons-inicio-res-cel {
-    position: absolute;
-    z-index: 30;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    bottom: 4vh;
-}
-.buttons-inicio-res-cel label{
-    width: 1.2rem ;
-    height:1.2rem;
-    background-color: #4F364B;
-    border-radius: 100%;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: 300ms ease-in-out;
-}
-.buttons-inicio-res-cel label:hover {
-    scale: 1.2;
-    opacity: 1;
-}
-.in-res-slider-cel input:nth-child(1):checked ~ .buttons-inicio-res-cel label:nth-child(1),
-.in-res-slider-cel input:nth-child(2):checked ~ .buttons-inicio-res-cel label:nth-child(2),
-.in-res-slider-cel input:nth-child(3):checked ~ .buttons-inicio-res-cel label:nth-child(3),
-.in-res-slider-cel input:nth-child(4):checked ~ .buttons-inicio-res-cel label:nth-child(4) {
-    opacity: 1;
-}
-.inicio-img-res-cel{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    transition: 600ms ease-in-out;
-}
-.imagen-res-cel-inicio1,.imagen-res-cel-inicio2,.imagen-res-cel-inicio3,.imagen-res-cel-inicio4{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.in-res-slider-cel input:nth-child(1):checked ~ .inicio-img-res-cel{
-    left: -20%;
-}
-.in-res-slider-cel input:nth-child(2):checked ~ .inicio-img-res-cel{
-    left: -170%;
-}
-.in-res-slider-cel input:nth-child(3):checked ~ .inicio-img-res-cel{
-    left: -50%;
-}
-.in-res-slider-cel input:nth-child(4):checked ~ .inicio-img-res-cel{
-    left: -75%; 
-}
+   
 /* .in-res-slider input{
     visibility: hidden;
     display: none;
@@ -965,7 +895,12 @@ a {
 .inicio-slider input:nth-child(4):checked ~ .inicio-img {
     left: -300%; 
 } */
-
+.contenedor-inicio {
+    display: flex;
+}
+.cont-inicio-responsive {
+    display: none;
+}
 
     #Proyecto {
         padding: 2rem;
@@ -1074,7 +1009,6 @@ a {
  
 
     .punteo-intitucional {
-
         font-size: 0.7rem;
         line-height: 0.8rem;
     }
@@ -1113,7 +1047,77 @@ a {
     .ayuda {
         display: none;
     }
+@media only screen and (max-width:900px) {
+    .contenedor-inicio {
+        display: none;
+    }
+.cont-inicio-responsive-cel {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.in-res-slider-cel input{
+    visibility: hidden;
+    display: none;
+}
+.buttons-inicio-res-cel {
+    position: absolute;
+    z-index: 30;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    bottom: 4vh;
+}
+.buttons-inicio-res-cel label{
+    width: 1.2rem ;
+    height:1.2rem;
+    background-color: #4F364B;
+    border-radius: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.buttons-inicio-res-cel label:hover {
+    scale: 1.2;
+    opacity: 1;
+}
+.in-res-slider-cel input:nth-child(1):checked ~ .buttons-inicio-res-cel label:nth-child(1),
+.in-res-slider-cel input:nth-child(2):checked ~ .buttons-inicio-res-cel label:nth-child(2),
+.in-res-slider-cel input:nth-child(3):checked ~ .buttons-inicio-res-cel label:nth-child(3),
+.in-res-slider-cel input:nth-child(4):checked ~ .buttons-inicio-res-cel label:nth-child(4) {
+    opacity: 1;
+}
+.inicio-img-res-cel{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transition: 600ms ease-in-out;
+}
+.imagen-res-cel-inicio1,.imagen-res-cel-inicio2,.imagen-res-cel-inicio3,.imagen-res-cel-inicio4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
+.in-res-slider-cel input:nth-child(1):checked ~ .inicio-img-res-cel{
+    left: -20%;
+}
+.in-res-slider-cel input:nth-child(2):checked ~ .inicio-img-res-cel{
+    left: -170%;
+}
+.in-res-slider-cel input:nth-child(3):checked ~ .inicio-img-res-cel{
+    left: -50%;
+}
+.in-res-slider-cel input:nth-child(4):checked ~ .inicio-img-res-cel{
+    left: -75%; 
+}
+    
+}
 @media only screen and (max-width: 400px) {
         .contenedor-inicio {
             display: none;
@@ -1191,6 +1195,9 @@ a {
     }
 }
 @media screen and (max-width:550px) {
+    h4 {
+        font-size: 1.5rem;
+    }
     .-nav.visible {
         opacity: 1;
         visibility: visible;
@@ -1234,5 +1241,68 @@ a {
         font-weight: 600;
         color: #C7A6AD;
         font-size: 0.8rem;
+    }
+
+    .proyecto-flex {
+        flex-direction: column;
+    }
+    .imagen-proyecto1, .imagen-proyecto2 {
+        display: none;
+    }
+
+    .icon-flex {
+        display: none;
+    }
+
+
+    .imagen-transparencia2 {
+        display: none;
+    }
+
+    #Catalogo {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .catalogo-slider::-webkit-scrollbar{
+       display:none ;
+    }
+
+    .catalogo-imagen-texto {
+        padding-right: .8rem;
+    }
+
+
+    .reinsercion-flex {
+        flex-direction: column;
+        gap: none;
+    }
+    .reinsercion-img {
+        padding-left: 0;
+        padding-top: 2rem;
+        width: 100%;
+        height: 50%;
+    }
+
+    .Institucional-columna-flex {
+        padding-left: 0;
+    }
+
+    .video{
+        display: none;
+    }
+    .video-responsive {
+        display: flex;
+        width: 100%;
+        height: 80%;
+    }
+
+    #Contacto {
+        padding-top: 2rem;
+    }
+    .footer-brand {
+        width: 40vw;
+    }
+    .Ministerio {
+        width: 60vw;
     }
 }
