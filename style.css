@@ -315,7 +315,8 @@ line-height: 2.5rem;
 }
 .ropa-img3:hover {
     content:url(./media/Ropa/HOVER\ \(3\).png);
-}.ropa-img4:hover {
+}
+.ropa-img4:hover {
     content:url(./media/Ropa/HOVER\ \(2\).png);
 }
 /* .catalogo-flex :before {
@@ -586,7 +587,7 @@ a {
     }
     .reinsercion-img {
         width: 40vw;
-        height: 25vh;
+        height: 30vh;
     }
 
     .punteo-intitucional ul {
@@ -1093,6 +1094,9 @@ a {
     .catalogo-imagen-texto {
         padding-right: .8rem;
     }
+    .ropa-img1:hover, .ropa-img2:hover, .ropa-img3:hover, .ropa-img4:hover {
+        content: none;
+    }
 
 
     .reinsercion-flex {
@@ -1128,26 +1132,23 @@ a {
     }
     #button {
         width: 80%;
-    }
+    }   
+}
 
-
-
-
-
-
-
-
-
-
-
-    .contenedor-inicio {
+@media only screen and (max-width:770px) {
+      .contenedor-inicio {
         display: none;
     }
+
+
 .cont-inicio-responsive-cel {
     display: flex;
     position: relative;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
+    align-items: center;
+    justify-self: center;
 }
 .in-res-slider-cel input{
     visibility: hidden;
@@ -1156,7 +1157,7 @@ a {
 .buttons-inicio-res-cel {
     position: absolute;
     z-index: 30;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2vw;
@@ -1183,35 +1184,33 @@ a {
 }
 .inicio-img-res-cel{
     position: relative;
-    width: 100vw;
+    width: 400vw;
     height: 100vh;
     display: flex;
     transition: 600ms ease-in-out;
+    justify-items: center;
 }
 .imagen-res-cel-inicio1,.imagen-res-cel-inicio2,.imagen-res-cel-inicio3,.imagen-res-cel-inicio4{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .in-res-slider-cel input:nth-child(1):checked ~ .inicio-img-res-cel{
-    left: -20%;
+    left: -30vw;
 }
 .in-res-slider-cel input:nth-child(2):checked ~ .inicio-img-res-cel{
-    left: -170%;
+    left: -190vw;
 }
 .in-res-slider-cel input:nth-child(3):checked ~ .inicio-img-res-cel{
-    left: -50%;
+    left: -390vw;
 }
 .in-res-slider-cel input:nth-child(4):checked ~ .inicio-img-res-cel{
-    left: -75%; 
-}
-    
+    left: -530vw; 
 }
 
-@media only screen and (max-width:770px) {
     .icon-flex {
         display: flex;
         width: 100%;
@@ -1249,7 +1248,7 @@ a {
             display: none;
         }
         .cont-inicio-responsive-cel {
-            display: none;
+            display: flex;
         }
         
     .cont-inicio-responsive {
@@ -1317,10 +1316,12 @@ a {
     .in-res-slider input:nth-child(4):checked ~ .inicio-img-res{
         left: -75%; 
     }
+
+
     .icon-flex {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .icon {
         width: 5rem;
@@ -1341,5 +1342,31 @@ a {
     .boxes-flex {
         padding-top: 1rem;
     }
+    .Ministerio {
+        padding-top: 0;
+    }
+    }
+    @media only screen and (max-width: 400px) {
+        h2 {
+            line-height: 2.5rem;
+        }
+        .icon-flex {
+            justify-content: center;
+        }
+        
+        .icon {
+            width: 4rem;
+            align-content: center;
+            justify-content: center;
+        }
+        .icon-solo {
+            width: 4rem;
+        }
+        .catalogo-imagen-texto {
+            padding-bottom: 2rem;
+        }
+        .Ministerio {
+            padding-top: 0;
+        }
     }
 }
